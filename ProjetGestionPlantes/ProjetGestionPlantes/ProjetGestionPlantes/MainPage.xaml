@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetGestionPlantes.MainPage">
+    <StackLayout>
+        <!-- En-tête de l'application -->
+        <Frame>
+            <Label Text="Gestionnaire de plantes" FontSize="Default" Padding="10,5,10,10"/>
+        </Frame>
+        
+        <!-- Corps de l'application -->
+        <Frame>
+            <Label Text="test" FontSize="Default" Padding="20,20,20,20"/>
+        </Frame>
+
+        <!-- Pied de page de l'application -->
+        <Frame Height="15"  Width="100">
+            <Button x:Name="BtnTest" 
+                        Text="Test"
+                        CornerRadius="50"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        BackgroundColor="#CDF1CEV"
+                        Clicked="OnClick"
+                        HeightRequest="50"
+                        WidthRequest="50"/>
+        </Frame>
+        
+    </StackLayout>
+
+</ContentPage>
