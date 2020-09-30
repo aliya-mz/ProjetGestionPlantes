@@ -984,11 +984,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aliya.mz\\Desktop\\Aliya\\CFPT\\Annee_3\\Semestre_1\\AT_NEW_TECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\ProjetGestionPlantes.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\ProjetGestionPlantes.iOS.csproj",
       "projectName": "ProjetGestionPlantes.iOS",
-      "projectPath": "C:\\Users\\aliya.mz\\Desktop\\Aliya\\CFPT\\Annee_3\\Semestre_1\\AT_NEW_TECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\ProjetGestionPlantes.iOS.csproj",
+      "projectPath": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\ProjetGestionPlantes.iOS.csproj",
       "packagesPath": "C:\\Users\\aliya.mz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aliya.mz\\Desktop\\Aliya\\CFPT\\Annee_3\\Semestre_1\\AT_NEW_TECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\obj\\",
+      "outputPath": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1009,8 +1009,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\aliya.mz\\Desktop\\Aliya\\CFPT\\Annee_3\\Semestre_1\\AT_NEW_TECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj": {
-              "projectPath": "C:\\Users\\aliya.mz\\Desktop\\Aliya\\CFPT\\Annee_3\\Semestre_1\\AT_NEW_TECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj"
+            "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj": {
+              "projectPath": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj"
             }
           }
         }

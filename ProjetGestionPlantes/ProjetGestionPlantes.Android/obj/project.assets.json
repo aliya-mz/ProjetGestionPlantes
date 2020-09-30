@@ -1936,11 +1936,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aliya.mz\\Desktop\\Aliya\\CFPT\\Annee_3\\Semestre_1\\AT_NEW_TECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.Android\\ProjetGestionPlantes.Android.csproj",
+      "projectUniqueName": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.Android\\ProjetGestionPlantes.Android.csproj",
       "projectName": "ProjetGestionPlantes.Android",
-      "projectPath": "C:\\Users\\aliya.mz\\Desktop\\Aliya\\CFPT\\Annee_3\\Semestre_1\\AT_NEW_TECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.Android\\ProjetGestionPlantes.Android.csproj",
+      "projectPath": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.Android\\ProjetGestionPlantes.Android.csproj",
       "packagesPath": "C:\\Users\\aliya.mz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aliya.mz\\Desktop\\Aliya\\CFPT\\Annee_3\\Semestre_1\\AT_NEW_TECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.Android\\obj\\",
+      "outputPath": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1961,8 +1961,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\aliya.mz\\Desktop\\Aliya\\CFPT\\Annee_3\\Semestre_1\\AT_NEW_TECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj": {
-              "projectPath": "C:\\Users\\aliya.mz\\Desktop\\Aliya\\CFPT\\Annee_3\\Semestre_1\\AT_NEW_TECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj"
+            "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj": {
+              "projectPath": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj"
             }
           }
         }

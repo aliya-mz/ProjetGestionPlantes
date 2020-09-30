@@ -19,7 +19,7 @@ namespace ProjetGestionPlantes
         {
             Button button = (Button)sender;
             button.Text = "réussi";
-            BtnTest.BackgroundColor = Color.Red;
+            btnAddPlante.BackgroundColor = Color.Blue;
         }
     }
 }
