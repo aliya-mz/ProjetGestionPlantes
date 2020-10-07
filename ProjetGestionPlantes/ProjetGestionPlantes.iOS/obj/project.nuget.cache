@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "wXmd6US29opDYqCSQUhHd44AGXzEElnQJc8UE+nN+qbtYvLPtbmf5hTT2R2gQtoyj9+2DGk9hlity3KN/JcukQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\michi.odk\\Desktop\\P3A\\NVTECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\ProjetGestionPlantes.iOS.csproj",
+=======
+  "dgSpecHash": "LdC8xLQljeycYwAV765wY/qHIFL95IyMNoJA65LfcIsh1KQX/c6GDmXscmfUynts4naFwD4lywuilz5ry4DPiQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\ProjetGestionPlantes.iOS.csproj",
+>>>>>>> Aliya
   "expectedPackageFiles": [
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"

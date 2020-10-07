@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\michi.odk\\Desktop\\P3A\\NVTECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\ProjetGestionPlantes.iOS.csproj": {}
   },
   "projects": {
@@ -12,13 +13,30 @@
         "projectPath": "C:\\Users\\michi.odk\\Desktop\\P3A\\NVTECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\ProjetGestionPlantes.iOS.csproj",
         "packagesPath": "C:\\Users\\michi.odk\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\michi.odk\\Desktop\\P3A\\NVTECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\obj\\",
+=======
+    "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\ProjetGestionPlantes.iOS.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\ProjetGestionPlantes.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\ProjetGestionPlantes.iOS.csproj",
+        "projectName": "ProjetGestionPlantes.iOS",
+        "projectPath": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\ProjetGestionPlantes.iOS.csproj",
+        "packagesPath": "C:\\Users\\aliya.mz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\obj\\",
+>>>>>>> Aliya
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\michi.odk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\aliya.mz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Aliya
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +50,13 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\michi.odk\\Desktop\\P3A\\NVTECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj": {
                 "projectPath": "C:\\Users\\michi.odk\\Desktop\\P3A\\NVTECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj"
+=======
+              "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj": {
+                "projectPath": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj"
+>>>>>>> Aliya
               }
             }
           }
@@ -65,6 +88,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\michi.odk\\Desktop\\P3A\\NVTECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -73,12 +97,26 @@
         "projectPath": "C:\\Users\\michi.odk\\Desktop\\P3A\\NVTECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj",
         "packagesPath": "C:\\Users\\michi.odk\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\michi.odk\\Desktop\\P3A\\NVTECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\obj\\",
+=======
+    "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj",
+        "projectName": "ProjetGestionPlantes",
+        "projectPath": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj",
+        "packagesPath": "C:\\Users\\aliya.mz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\obj\\",
+>>>>>>> Aliya
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\michi.odk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\aliya.mz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Aliya
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -128,7 +166,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+>>>>>>> Aliya
         }
       }
     }

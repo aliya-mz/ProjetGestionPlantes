@@ -44,7 +44,7 @@
                         HeightRequest="50"
                         WidthRequest="50"
                         FontSize="20"
-                        TextColor="#656565"
+                        TextColor="#656565"               
                     />
         </Frame>
     </Grid>

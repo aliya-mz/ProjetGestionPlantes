@@ -19,6 +19,7 @@ namespace ProjetGestionPlantes
             InitializeComponent();
         }
 
+<<<<<<< HEAD
         private void OnClick(object sender, EventArgs args)
         {
             // à ajouter dans le Onclick de la page "ajout nouvelle plante" 
@@ -34,6 +35,26 @@ namespace ProjetGestionPlantes
             btnSection.Margin = 5;
             // ajout dynamique de boutons dans un stackLayout côté Xamarin
             lytContent.Children.Add(btnSection);
+=======
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            //à faire quand la page principale apparaît
+            //afficher toutes les plantes enregistrées dans la base
+        }
+
+        async void OnClick(object sender, EventArgs args)
+        {
+            Button button = (Button)sender;
+            button.Text = "réussi";
+            btnAddPlante.BackgroundColor = Color.Blue;
+
+            //aller sur la page pour ajouter une plante
+            await Navigation.PushAsync(new PageAjouterPlante
+            {
+            });
+>>>>>>> Aliya
         }
 
     }
