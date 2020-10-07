@@ -10,6 +10,13 @@
 *.sln.docstates
 *.userprefs
 
+ProjetGestionPlantes/ProjetGestionPlantes/bin/
+ProjetGestionPlantes/ProjetGestionPlantes/obj/
+ProjetGestionPlantes/ProjetGestionPlantes.Android/bin/
+ProjetGestionPlantes/ProjetGestionPlantes.Android/obj/
+ProjetGestionPlantes/ProjetGestionPlantes.iOS/bin/
+ProjetGestionPlantes/ProjetGestionPlantes.iOS/obj/
+
 # ignore Xamarin.Android Resource.Designer.cs files
 **/*.Droid/**/[Rr]esource.[Dd]esigner.cs
 **/*.Android/**/[Rr]esource.[Dd]esigner.cs
