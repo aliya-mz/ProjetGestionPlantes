@@ -23,9 +23,14 @@
         </Frame>
 
         <!--Corps de l'application-->
-        <Frame Grid.Row="1" Grid.ColumnSpan="2" OutlineColor="LightGray">
-            <Label Text="test" FontSize="Default" Padding="5,5,5,5" />
-        </Frame>
+        <ScrollView  Grid.Row="1" Grid.ColumnSpan="2" >
+            <StackLayout x:Name="lytContent"  BackgroundColor="White" Padding="10,10,10,10" >
+           
+         </StackLayout>
+        </ScrollView>
+        
+    
+            
 
         <!--Pied de page de l'application-->
         <Frame HeightRequest="100"  WidthRequest="100" Grid.Row="2" Grid.ColumnSpan="2">
