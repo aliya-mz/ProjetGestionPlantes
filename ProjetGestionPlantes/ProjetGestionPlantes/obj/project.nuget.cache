@@ -1,14 +1,5 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "minttJiPxZr1aHAI81LCQg5U76Flb+lgeyIbLAkAhjFdrGzghlW4MpGh8KiM4Z0z5UrCFL8SDMtYyuFSKIzyaw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\michi.odk\\Desktop\\P3A\\NVTECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\michi.odk\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\michi.odk\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\michi.odk\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-=======
   "dgSpecHash": "lqTsHx8CzKr4rnpfkwcT16a4mCCNfAxsStdNsKlqptGZQq760J9OkgEpJCpJA7oBZgw/khKo7A2h4R8GO1MuZA==",
   "success": true,
   "projectFilePath": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj",
@@ -16,9 +7,15 @@
     "C:\\Users\\aliya.mz\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\aliya.mz\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\aliya.mz\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
->>>>>>> Aliya
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problème de lecture du fichier cache C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
