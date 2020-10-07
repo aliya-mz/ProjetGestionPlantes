@@ -14,12 +14,25 @@ namespace ProjetGestionPlantes
         {
             InitializeComponent();
         }
-        
-        private void OnClick(object sender, EventArgs args)
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            //à faire quand la page principale apparaît
+            //afficher toutes les plantes enregistrées dans la base
+        }
+
+        async void OnClick(object sender, EventArgs args)
         {
             Button button = (Button)sender;
             button.Text = "réussi";
             btnAddPlante.BackgroundColor = Color.Blue;
+
+            //aller sur la page pour ajouter une plante
+            await Navigation.PushAsync(new PageAjouterPlante
+            {
+            });
         }
     }
 }
