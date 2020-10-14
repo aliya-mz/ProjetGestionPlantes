@@ -19,23 +19,35 @@ namespace ProjetGestionPlantes
             InitializeComponent();
         }
 
-<<<<<<< HEAD
+
         private void OnClick(object sender, EventArgs args)
         {
-            // à ajouter dans le Onclick de la page "ajout nouvelle plante" 
-            int random = rnd.Next(0, (rgbCouleurs.Length/3) - 1);
+            Button button = (Button)sender;
+            button.Text = "réussi";
+            btnAddPlante.BackgroundColor = Color.Blue;
 
-            
-           Button btnSection = new Button();
-            btnSection.BackgroundColor = Color.FromRgb(rgbCouleurs[random,0], rgbCouleurs[random,1], rgbCouleurs[random,2]);
-           // !!!!! Ajouter le nom et l'espece dans button
+            // à ajouter dans le Onclick de la page "ajout nouvelle plante" 
+            int random = rnd.Next(0, (rgbCouleurs.Length / 3) - 1);
+
+
+            Button btnSection = new Button();
+            btnSection.BackgroundColor = Color.FromRgb(rgbCouleurs[random, 0], rgbCouleurs[random, 1], rgbCouleurs[random, 2]);
+            // !!!!! Ajouter le nom et l'espece dans button
             btnSection.WidthRequest = 300;
             btnSection.HeightRequest = 100;
             btnSection.CornerRadius = 20;
             btnSection.Margin = 5;
             // ajout dynamique de boutons dans un stackLayout côté Xamarin
             lytContent.Children.Add(btnSection);
-=======
+
+            
+            //async voidOnclick
+            ////aller sur la page pour ajouter une plante
+            //await Navigation.PushAsync(new PageAjouterPlante
+            //{
+            //});
+        }
+
         protected override void OnAppearing()
         {
             base.OnAppearing();
@@ -43,19 +55,5 @@ namespace ProjetGestionPlantes
             //à faire quand la page principale apparaît
             //afficher toutes les plantes enregistrées dans la base
         }
-
-        async void OnClick(object sender, EventArgs args)
-        {
-            Button button = (Button)sender;
-            button.Text = "réussi";
-            btnAddPlante.BackgroundColor = Color.Blue;
-
-            //aller sur la page pour ajouter une plante
-            await Navigation.PushAsync(new PageAjouterPlante
-            {
-            });
->>>>>>> Aliya
-        }
-
     }
 }
