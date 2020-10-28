@@ -49,7 +49,7 @@ namespace ProjetGestionPlantes
 
             //créer le texte (à mettre dans le stacklayout)
             Label nomPlante = new Label();
-            nomPlante.Text = "lili";
+            nomPlante.Text = "Lili";
 
             Label especePlante = new Label();
             nomPlante.Text = "Cactus";
@@ -73,7 +73,7 @@ namespace ProjetGestionPlantes
             // ajout dynamique de boutons dans un stackLayout côté Xamarin
             lytContent.Children.Add(vuePlante);
 
-            //VRAIRE FONCTION DE CE BOUTON-----------------------------------------------------------------------------------------------------------------------------------------
+            //VRAIE FONCTION DE CE BOUTON-----------------------------------------------------------------------------------------------------------------------------------------
             //async voidOnclick
             ////aller sur la page pour ajouter une plante
             //await Navigation.PushAsync(new PageAjouterPlante
@@ -99,6 +99,6 @@ namespace ProjetGestionPlantes
             base.OnAppearing();
 
             //parcourir les données et afficher toutes les plantes enregistrées en ajouter dynamiquement leurs boutons
-        }
+        }        
     }
 }
