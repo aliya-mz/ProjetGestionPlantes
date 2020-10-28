@@ -2,7 +2,7 @@ bundleassemblies=false
 aotassemblies=false
 androidaotmode=none
 androidembedprofilers=
-androidenableprofiledaot=false
+androidenableprofiledaot=
 androiddextool=d8
 androidlinktool=
 androidpackageformat=apk
@@ -24,11 +24,7 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-<<<<<<< HEAD
-_nugetassetstimestamp=637376569722707423
-=======
-_nugetassetstimestamp=637376569986715607
->>>>>>> Aliya
+_nugetassetstimestamp=637382700316968033
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a

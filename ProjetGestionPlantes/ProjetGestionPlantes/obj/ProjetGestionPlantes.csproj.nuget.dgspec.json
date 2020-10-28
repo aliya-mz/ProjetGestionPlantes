@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj": {}
+    "C:\\Users\\aliya.mz\\Desktop\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj": {
+    "C:\\Users\\aliya.mz\\Desktop\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj",
+        "projectUniqueName": "C:\\Users\\aliya.mz\\Desktop\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj",
         "projectName": "ProjetGestionPlantes",
-        "projectPath": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj",
+        "projectPath": "C:\\Users\\aliya.mz\\Desktop\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj",
         "packagesPath": "C:\\Users\\aliya.mz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\obj\\",
+        "outputPath": "C:\\Users\\aliya.mz\\Desktop\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

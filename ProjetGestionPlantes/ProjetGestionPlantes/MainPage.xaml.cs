@@ -10,37 +10,70 @@ namespace ProjetGestionPlantes
 {
     public partial class MainPage : ContentPage
     {
-        int[,] rgbCouleurs = new int[5, 3] { { 205, 241, 206 }, { 174, 245, 176 }, { 185, 220, 186 }, { 136, 203, 138 }, { 171, 233, 130 } };
-        Random rnd = new Random();
-        string nomPlante = "Lili";
-        string especePlante = "Cactus";
         public MainPage()
         {
             InitializeComponent();
         }
 
-
         private void OnClick(object sender, EventArgs args)
         {
+            //test
             Button button = (Button)sender;
             button.Text = "réussi";
             btnAddPlante.BackgroundColor = Color.Blue;
 
-            // à ajouter dans le Onclick de la page "ajout nouvelle plante" 
+            // créer l'étiquette de la nouvelle plante (bouton qui mènera sur sa page) => à metttre dans OnAppearing() avec un foreach pour afficher chaque plante
+
+            // couleur random pour l'étiquette de la plante
+            int[,] rgbCouleurs = new int[5, 3] { { 205, 241, 206 }, { 174, 245, 176 }, { 185, 220, 186 }, { 136, 203, 138 }, { 171, 233, 130 } };
+            Random rnd = new Random();
             int random = rnd.Next(0, (rgbCouleurs.Length / 3) - 1);
 
+            //version bouton (on ne peut rien mettre dedans)
+            //Button btnPlante = new Button();
+            //btnPlante.BackgroundColor = Color.FromRgb(rgbCouleurs[random, 0], rgbCouleurs[random, 1], rgbCouleurs[random, 2]);
+            //// !!!!! Ajouter le nom et l'espece dans button
+            //btnPlante.WidthRequest = 300;
+            //btnPlante.HeightRequest = 100;
+            //btnPlante.CornerRadius = 20;
+            //btnPlante.Margin = 5;
+            //btnPlante.Clicked += VoirPlante;
 
-            Button btnSection = new Button();
-            btnSection.BackgroundColor = Color.FromRgb(rgbCouleurs[random, 0], rgbCouleurs[random, 1], rgbCouleurs[random, 2]);
-            // !!!!! Ajouter le nom et l'espece dans button
-            btnSection.WidthRequest = 300;
-            btnSection.HeightRequest = 100;
-            btnSection.CornerRadius = 20;
-            btnSection.Margin = 5;
+            //version stacklayout----------------------------------------------------------------
+            //créer le bouton (à mettre dans le stacklayout)
+            Button btnPlante = new Button();
+            btnPlante.Clicked += VoirPlante;
+            btnPlante.WidthRequest = 50;
+            btnPlante.HeightRequest = 50;
+            btnPlante.Text = "+";
+
+            //créer le texte (à mettre dans le stacklayout)
+            Label nomPlante = new Label();
+            nomPlante.Text = "lili";
+
+            Label especePlante = new Label();
+            nomPlante.Text = "Cactus";
+
+            StackLayout textPlante = new StackLayout();
+            textPlante.Children.Add(nomPlante);
+            textPlante.Children.Add(especePlante);
+
+            //créer le stacklayout de la plante
+            StackLayout vuePlante = new StackLayout();
+            vuePlante.BackgroundColor = Color.FromRgb(rgbCouleurs[random, 0], rgbCouleurs[random, 1], rgbCouleurs[random, 2]);
+            btnPlante.WidthRequest = 300;
+            btnPlante.HeightRequest = 100;
+            //btnPlante.CornerRadius = 20;
+            vuePlante.Margin = 5;
+
+            //mettre les éléments créés dans ce stacklayout
+            vuePlante.Children.Add(textPlante);
+            vuePlante.Children.Add(btnPlante);
+
             // ajout dynamique de boutons dans un stackLayout côté Xamarin
-            lytContent.Children.Add(btnSection);
+            lytContent.Children.Add(vuePlante);
 
-            
+            //VRAIRE FONCTION DE CE BOUTON-----------------------------------------------------------------------------------------------------------------------------------------
             //async voidOnclick
             ////aller sur la page pour ajouter une plante
             //await Navigation.PushAsync(new PageAjouterPlante
@@ -48,12 +81,24 @@ namespace ProjetGestionPlantes
             //});
         }
 
+        private void VoirPlante(object sender, EventArgs args)
+        {
+            //récupérer l'identifiant de la plante sur laquelle on a appuyé
+            //aller sur la page de détails de cette plante (récupérer ses informations grâce à son id)
+        }
+
+        private void CallCamera(object sender, EventArgs args)
+        {
+            //récupérer l'identifiant de la plante sur laquelle on a appuyé
+            //aller sur la camera
+        }
+
+        //quand la page principale apparaît
         protected override void OnAppearing()
         {
             base.OnAppearing();
 
-            //à faire quand la page principale apparaît
-            //afficher toutes les plantes enregistrées dans la base
+            //parcourir les données et afficher toutes les plantes enregistrées en ajouter dynamiquement leurs boutons
         }
     }
 }
