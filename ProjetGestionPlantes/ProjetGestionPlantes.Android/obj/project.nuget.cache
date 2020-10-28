@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RIr6DYczjv+y/MUmFktlcgdwR1P3nrdeXu94vOstr2rY2gwtavPyAtff+X+RetugfR5Hwi7N2fIEcZ/RreOYSA==",
+  "dgSpecHash": "4BlLvbNgWK9D/cDbKwmmtPNoZ2bYjuixH6IHc56cpi5BLCdDMv8SVrSUzUOfw6DLKcSnmtR2jNbWSOeQxHm2Uw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aliya.mz\\Desktop\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.Android\\ProjetGestionPlantes.Android.csproj",
+  "projectFilePath": "C:\\Users\\michi.odk\\Desktop\\P3A\\NVTECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.Android\\ProjetGestionPlantes.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",

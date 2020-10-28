@@ -978,24 +978,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aliya.mz\\.nuget\\packages\\": {},
+    "C:\\Users\\michi.odk\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aliya.mz\\Desktop\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\ProjetGestionPlantes.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\michi.odk\\Desktop\\P3A\\NVTECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\ProjetGestionPlantes.iOS.csproj",
       "projectName": "ProjetGestionPlantes.iOS",
-      "projectPath": "C:\\Users\\aliya.mz\\Desktop\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\ProjetGestionPlantes.iOS.csproj",
-      "packagesPath": "C:\\Users\\aliya.mz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aliya.mz\\Desktop\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\obj\\",
+      "projectPath": "C:\\Users\\michi.odk\\Desktop\\P3A\\NVTECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\ProjetGestionPlantes.iOS.csproj",
+      "packagesPath": "C:\\Users\\michi.odk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\michi.odk\\Desktop\\P3A\\NVTECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\aliya.mz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\michi.odk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1009,8 +1009,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\aliya.mz\\Desktop\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj": {
-              "projectPath": "C:\\Users\\aliya.mz\\Desktop\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj"
+            "C:\\Users\\michi.odk\\Desktop\\P3A\\NVTECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj": {
+              "projectPath": "C:\\Users\\michi.odk\\Desktop\\P3A\\NVTECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.csproj"
             }
           }
         }

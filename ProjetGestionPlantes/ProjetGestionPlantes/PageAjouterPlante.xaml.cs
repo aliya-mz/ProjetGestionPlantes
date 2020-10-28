@@ -16,5 +16,14 @@ namespace ProjetGestionPlantes
         {
             InitializeComponent();
         }
+        private void OnClickCreate(object sender, EventArgs args)
+        {
+            //test
+            Button button = (Button)sender;
+            button.Text = "réussi";
+            btnCreatePlante.BackgroundColor = Color.Blue;
+
+        }
     }
+
 }
