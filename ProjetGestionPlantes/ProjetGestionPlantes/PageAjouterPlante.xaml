@@ -2,11 +2,85 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetGestionPlantes.PageAjouterPlante">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <Grid  ColumnSpacing="0" RowSpacing="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*" />
+            <ColumnDefinition Width="0.5*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.14*" />
+            <RowDefinition Height="0.72*" />
+            <RowDefinition Height="0.14*" />
+        </Grid.RowDefinitions>
+
+        <!--En-tête de l'application (navigation)-->
+        <Frame Grid.Row="0" >
+            <!--Logo de l'application-->
+            <Image Source="logoPlante.jpg"/>
+        </Frame>
+        <Frame Grid.Row="0" Grid.Column="1">
+        </Frame>
+
+        <!--Corps de l'application-->
+        <ScrollView  Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="#CDF1CE" >
+            <StackLayout>
+
+                <!-- COULEUR BORDURE
+}                          https://stackoverflow.com/questions/37822668/how-to-change-border-color-of-entry-in-xamarin-forms -->
+                <!--RADIUS ET EMPLACEMENT DES ENTRY A FAIRE -->
+                <!-- entryNom -->
+                <Entry x:Name="entryNom"
+                   Placeholder="Nom"
+                   VerticalOptions="CenterAndExpand"
+                   PlaceholderColor="#656565"
+                   BackgroundColor="White"
+                   
+                   MaxLength="25"
+                   />
+                <!-- entryEspece -->
+                <Entry x:Name="entryEspece"
+                    Placeholder="Séléctionner une espèce"
+                   VerticalOptions="CenterAndExpand"
+                   PlaceholderColor="#656565"
+                   BackgroundColor="White"
+                   MaxLength="25"
+                   />
+                <Label Text="OU"/>
+                <!-- btnAddEspece-->
+                <Entry x:Name="btnAddEspece"
+                   Placeholder="Ajouter une espèce"
+                   VerticalOptions="CenterAndExpand"
+                   PlaceholderColor="#656565"
+                   BackgroundColor="White"
+                   MaxLength="25"
+                   />
+                <!-- entryNotes-->
+                <Entry x:Name="entryNotes"
+                   Placeholder="Notes"
+                   VerticalOptions="CenterAndExpand"
+                   PlaceholderColor="#656565"
+                   BackgroundColor="White"
+                   MaxLength="25"
+                />
+            </StackLayout>
+            <!-- <Entry Placeholder="Ajouter une espèce"/>-->
+        </ScrollView>
+        <!--Pied de page de l'application (navigation)-->
+        <Frame HeightRequest="100"  WidthRequest="100" Grid.Row="2" Grid.ColumnSpan="2">
+            <!--Bouton qui permet d'accéder au formulaire pour ajouter une plante-->
+            <Button x:Name="btnCreatePlante" 
+                        Text="Créer"
+                        FontSize="8"
+                        CornerRadius="60"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        BackgroundColor="#CDF1CE"
+                        Clicked="OnClickCreate"
+                        HeightRequest="50"
+                        WidthRequest="50"
+                        TextColor="#656565"               
+                    />
+        </Frame>
+    </Grid>
+
 </ContentPage>

@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "WTj0NEDDxpZXpfcyPn3A8ymQenN387DH2lPfx6/DV0Z98PVoT1qAvdWXWyKmDLlim6xIMQfU5/VWdp8hUDiWOQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\ProjetGestionPlantes.iOS.csproj",
+=======
+  "dgSpecHash": "wXmd6US29opDYqCSQUhHd44AGXzEElnQJc8UE+nN+qbtYvLPtbmf5hTT2R2gQtoyj9+2DGk9hlity3KN/JcukQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\michi.odk\\Desktop\\P3A\\NVTECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.iOS\\ProjetGestionPlantes.iOS.csproj",
+>>>>>>> Michi
   "expectedPackageFiles": [
     "C:\\Users\\aliya.mz\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
     "C:\\Users\\aliya.mz\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",

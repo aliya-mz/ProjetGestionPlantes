@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "DyYJNG9F9bqlawoytjeSBiMjaqZkDD5ZrdBai8mWEAYMc8O2VNJHM/qz8Zg/xlo+UC0AHj9xiw+c2rC9w3uqqw==",
   "success": true,
   "projectFilePath": "C:\\Users\\aliya.mz\\Documents\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.Android\\ProjetGestionPlantes.Android.csproj",
+=======
+  "dgSpecHash": "4BlLvbNgWK9D/cDbKwmmtPNoZ2bYjuixH6IHc56cpi5BLCdDMv8SVrSUzUOfw6DLKcSnmtR2jNbWSOeQxHm2Uw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\michi.odk\\Desktop\\P3A\\NVTECH\\ProjetGestionPlantes\\ProjetGestionPlantes\\ProjetGestionPlantes.Android\\ProjetGestionPlantes.Android.csproj",
+>>>>>>> Michi
   "expectedPackageFiles": [
     "C:\\Users\\aliya.mz\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
     "C:\\Users\\aliya.mz\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
