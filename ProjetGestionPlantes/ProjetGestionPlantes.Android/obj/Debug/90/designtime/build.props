@@ -24,15 +24,7 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-<<<<<<< HEAD
-_nugetassetstimestamp=637400753853072340
-=======
-<<<<<<< HEAD
-_nugetassetstimestamp=637394785585462629
-=======
-_nugetassetstimestamp=637394739442971630
->>>>>>> Michi
->>>>>>> parent of 7f390b8... Update
+_nugetassetstimestamp=637400766699100160
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a
