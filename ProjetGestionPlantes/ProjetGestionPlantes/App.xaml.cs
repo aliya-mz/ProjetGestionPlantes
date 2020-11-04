@@ -13,9 +13,12 @@ namespace ProjetGestionPlantes
         {
             get
             {
+                //si la BD n'a pas encore été créee
                 if (database == null)
                 {
-                    database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "people.db3"));
+                    //Créer la BD
+                    //dbplantes.db3 est le fichier de la base de données locale
+                    database = new Database(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "dbplantes.db3"));
                 }
                 return database;
             }
@@ -30,17 +33,17 @@ namespace ProjetGestionPlantes
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            //Quand l'application démarre
         }
 
         protected override void OnSleep()
         {
-            // Handle when your app sleeps
+            //Quand l'application est en veille
         }
 
         protected override void OnResume()
         {
-            // Handle when your app resumes
+            //Quand on revient sur l'application
         }
     }
 }
@@ -61,8 +64,7 @@ namespace ProjetGestionPlantes
 
 //        //vider les champs
 //        entryNom.Text = entryNotes.Text = entryEspece.Text = string.Empty;
-
-//        //enregistrer les données dans une listview (non existante pour le moment)
-//        //listView.ItemsSource = await App.Database.GetPeopleAsync();
 //    }
 //}
+
+//A METTRE DANS MAIN_PAGE.XAML.CS
