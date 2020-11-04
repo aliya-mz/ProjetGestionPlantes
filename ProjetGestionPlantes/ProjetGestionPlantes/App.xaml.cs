@@ -66,5 +66,3 @@ namespace ProjetGestionPlantes
 //        entryNom.Text = entryNotes.Text = entryEspece.Text = string.Empty;
 //    }
 //}
-
-//A METTRE DANS MAIN_PAGE.XAML.CS

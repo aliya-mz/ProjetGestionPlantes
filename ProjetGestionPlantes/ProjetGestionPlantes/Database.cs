@@ -12,16 +12,29 @@ namespace ProjetGestionPlantes
         {
             _database = new SQLiteAsyncConnection(dbPath);
             _database.CreateTableAsync<Plante>().Wait();
+            _database.CreateTableAsync<Espece>().Wait();
         }
 
-        public Task<List<Plante>> GetPeopleAsync()
+        //gestion de la table Plante
+        public Task<List<Plante>> GetPlanteAsync()
         {
             return _database.Table<Plante>().ToListAsync();
         }
 
-        public Task<int> SavePersonAsync(Plante plante)
+        public Task<int> SavePlanteAsync(Plante plante)
         {
             return _database.InsertAsync(plante);
+        }
+
+        //gestion de la table Espece
+        public Task<List<Espece>> GetEspeceAsync()
+        {
+            return _database.Table<Espece>().ToListAsync();
+        }
+
+        public Task<int> SaveEspeceAsync(Espece espece)
+        {
+            return _database.InsertAsync(espece);
         }
     }
 }
