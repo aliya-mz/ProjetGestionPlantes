@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetGestionPlantes.PageAjouterEspece">
+    <Grid  ColumnSpacing="0" RowSpacing="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*" />
+            <ColumnDefinition Width="0.5*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.14*" />
+            <RowDefinition Height="0.72*" />
+            <RowDefinition Height="0.14*" />
+        </Grid.RowDefinitions>
+
+        <!--En-tête de l'application (navigation)-->
+        <Frame Grid.Row="0" >
+            <!--Logo de l'application-->
+            <Image Source="logoPlante.jpg"/>
+        </Frame>
+        <Frame Grid.Row="0" Grid.Column="1">
+        </Frame>
+
+        <!--Corps de l'application  
+        
+        Grid inside grid
+        
+        -->
+
+        <ScrollView Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="#CDF1CE" >
+            <StackLayout>
+
+                <Grid Padding="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.36*"/>
+                        <RowDefinition Height="0.14*"/>
+                        <RowDefinition Height="0.5*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- COULEUR BORDURE
+}               RADIUS ET EMPLACEMENT DES ENTRY A FAIRE -->
+
+                    <!-- Nom de l'espèce -->
+                    <Label Grid.Row="1" Text="Nom de l'espèce" FontSize="Large" HorizontalOptions="Start" VerticalOptions="Center" IsVisible="True" Padding="0,0,15,0"
+                    >
+                    </Label>
+                    <Entry Grid.Row="2" x:Name="entryEspece"
+                   Placeholder="Ex : Tulipe rose"
+                   VerticalOptions="CenterAndExpand"
+                   PlaceholderColor="#656565"
+                   BackgroundColor="White"
+                   MaxLength="25" HorizontalOptions="Fill"
+                   />
+                    <!-- Arrosage -->
+                    <Label Grid.Row="3" Text="Arroser tous les "
+                    >
+                    </Label>
+                    <Entry Grid.Row="3" x:Name="entryJours"
+                   VerticalOptions="Start"
+                   PlaceholderColor="#656565"
+                   BackgroundColor="White"
+                   MaxLength="25" 
+                   HorizontalOptions="CenterAndExpand"
+                   WidthRequest="70"
+                   HeightRequest="30"
+                   />
+                    <Label Grid.Row="3" Text=" jours." HorizontalTextAlignment="End" HorizontalOptions="Fill"
+                    >
+                    </Label>
+                </Grid>
+            </StackLayout>
+            <!-- <Entry Placeholder="Ajouter une espèce"/>-->
+        </ScrollView>
+
+        <!--Pied de page de l'application (navigation)-->
+        <Frame HeightRequest="100"  WidthRequest="100" Grid.Row="2" Grid.ColumnSpan="2">
+            <!--Bouton qui permet d'accéder au formulaire pour ajouter une plante-->
+            <Button x:Name="btnAjouterEspece" 
+                        Text="Ajouter"
+                        FontSize="8"
+                        CornerRadius="60"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        BackgroundColor="#CDF1CE"
+                        Clicked="OnClickAddEspece"
+                        HeightRequest="50"
+                        WidthRequest="50"
+                        TextColor="#656565"               
+                    />
+        </Frame>
+    </Grid>
+
+</ContentPage>
