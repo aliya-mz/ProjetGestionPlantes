@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -99,6 +99,12 @@ namespace ProjetGestionPlantes
             base.OnAppearing();
 
             //parcourir les données et afficher toutes les plantes enregistrées en ajouter dynamiquement leurs boutons
+
+            //enregistrer les plantes de la BD dans une liste
+            /*listView.ItemsSource = await App.Database.GetPlanteAsync();
+
+            List<Plante> plantes = new List<Plante>();
+            plantes.*/
         }        
     }
 }
