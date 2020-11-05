@@ -16,12 +16,21 @@ namespace ProjetGestionPlantes
         {
             InitializeComponent();
         }
-        private void OnClickSaveInfo(object sender, EventArgs args)
+
+        protected override void OnAppearing()
         {
-            //test
-            Button button = (Button)sender;
-            button.Text = "réussi";
-            btnSaveInfoPlant.BackgroundColor = Color.Blue;
+            base.OnAppearing();
+
+            //récupérer le Text du bouton qui a mené sur cette page
+            //Plante plante = BindingContext;
+
+            //Afficher les information
+            //AfficherInfosPlante(plante);
+        }
+
+        async void AfficherInfosPlante(int plante)
+        {
+            //Afficher les infos de la plante, enregistrée dans la BD, à partir de son id
 
         }
     }
