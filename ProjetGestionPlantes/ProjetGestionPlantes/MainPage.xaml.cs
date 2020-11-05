@@ -10,6 +10,8 @@ namespace ProjetGestionPlantes
 {
     public partial class MainPage : ContentPage
     {
+        List<Button> boutonsPlantes = new List<Button>();
+
         public MainPage()
         {
             InitializeComponent();
@@ -20,86 +22,121 @@ namespace ProjetGestionPlantes
             //test
             Button button = (Button)sender;
             button.Text = "réussi";
-            btnAddPlante.BackgroundColor = Color.Blue;
-
-            // créer l'étiquette de la nouvelle plante (bouton qui mènera sur sa page) => à metttre dans OnAppearing() avec un foreach pour afficher chaque plante
-
-            // couleur random pour l'étiquette de la plante
-            int[,] rgbCouleurs = new int[5, 3] { { 205, 241, 206 }, { 174, 245, 176 }, { 185, 220, 186 }, { 136, 203, 138 }, { 171, 233, 130 } };
-            Random rnd = new Random();
-            int random = rnd.Next(0, (rgbCouleurs.Length / 3) - 1);
-
-            
-            //VRAIE FONCTION DE CE BOUTON-----------------------------------------------------------------------------------------------------------------------------------------
-            //async voidOnclick
-            ////aller sur la page pour ajouter une plante
-            //await Navigation.PushAsync(new PageAjouterPlante
-            //{
-            //});
         }
 
-        private void VoirPlante(object sender, EventArgs args)
-        {
-            //récupérer l'identifiant de la plante sur laquelle on a appuyé
-            //aller sur la page de détails de cette plante (récupérer ses informations grâce à son id)
-        }
+        //async void Onclick(object sender, EventArgs args)
+        //{
+        //    //test
+        //    Button button = (Button)sender;
+        //    button.Text = "réussi";
+
+        //    //aller sur la page pour ajouter une plante
+        //    await Navigation.PushAsync(new PageAjouterPlante
+        //    {
+        //    });
+        //}
 
         private void CallCamera(object sender, EventArgs args)
         {
-            //récupérer l'identifiant de la plante sur laquelle on a appuyé
             //aller sur la camera
+
+            //PAGE CAMERA (???)
+
+            //scanner le code qr et récupérer l'id de la plante qui est le texte utilisé pour le générer
+
+            //afficher les informations d'arrosage de la plante (dans combien de temps il faut l'arroser ?)
+            //afficher le bouton permettant de dire qu'on l'a arrosée
+            //afficher les emojis en fonction de l'état d'arrosage de la plante (heureuse si elle n'a pas besoin d'être arrosée, moyen si elle doit être arrosée aujourd'hui, triste si un arrosage a été manqué (la veille ou plus))
         }
 
-        //quand la page principale apparaît
         protected override void OnAppearing()
         {
-            base.OnAppearing();            
+            base.OnAppearing();
+            AfficherPlantes();
         }
 
-        async void AfficherPlantes(object sender, EventArgs e)
+        //ok
+        async void AfficherPlantes()
         {
-            //parcourir les données et afficher toutes les plantes enregistrées en ajouter dynamiquement leurs boutons
-
             //enregistrer les plantes de la BD dans une liste
             List<Plante> plantes = new List<Plante>();
             plantes.AddRange(await App.Database.GetPlanteAsync());
 
-            //parcourir les éléments de la liste et les afficher
-            foreach(Plante plante in plantes)
+            //couleurs pour les étiquettes des plantes
+            int[,] rgbCouleurs = new int[5, 3] { { 205, 241, 206 }, { 174, 245, 176 }, { 185, 220, 186 }, { 136, 203, 138 }, { 171, 233, 130 } };
+            Random rnd = new Random();
+
+            //parcourir les plantes de la liste et les afficher
+            foreach (Plante plante in plantes)
             {
-                ////créer le bouton (à mettre dans le stacklayout)
-                //Button btnPlante = new Button();
-                //btnPlante.Clicked += VoirPlante;
-                //btnPlante.WidthRequest = 50;
-                //btnPlante.HeightRequest = 50;
-                //btnPlante.Text = "+";
+                // couleur random pour l'étiquette de la plante                
+                int random = rnd.Next(0, (rgbCouleurs.Length / 3) - 1);
 
-                ////créer le texte (à mettre dans le stacklayout)
-                //Label nomPlante = new Label();
-                //nomPlante.Text = "Lili";
+                //créer le bouton (à mettre dans le stacklayout) - enregistrer l'id de la plante dans le Text
+                Button btnPlante = new Button();
+                btnPlante.Clicked += VoirPlante;
+                btnPlante.WidthRequest = 50;
+                btnPlante.HeightRequest = 50;
+                btnPlante.Text = plante.ID_PLANTE.ToString();
 
-                //Label especePlante = new Label();
-                //nomPlante.Text = "Cactus";
+                boutonsPlantes.Add(btnPlante);
 
-                //StackLayout textPlante = new StackLayout();
-                //textPlante.Children.Add(nomPlante);
-                //textPlante.Children.Add(especePlante);
+                //créer le texte (à mettre dans le stacklayout)
+                Label nomPlante = new Label();
+                nomPlante.Text = plante.Nom;
 
-                ////créer le stacklayout de la plante
-                //StackLayout vuePlante = new StackLayout();
-                //vuePlante.BackgroundColor = Color.FromRgb(rgbCouleurs[random, 0], rgbCouleurs[random, 1], rgbCouleurs[random, 2]);
-                //btnPlante.WidthRequest = 300;
-                //btnPlante.HeightRequest = 100;
-                ////btnPlante.CornerRadius = 20;
-                //vuePlante.Margin = 5;
+                Label especePlante = new Label();
+                especePlante.Text = plante.IdEspece.ToString(); //remplacer id espece par nomEspece de la table Espece avec une jointure
 
-                ////mettre les éléments créés dans ce stacklayout
-                //vuePlante.Children.Add(textPlante);
-                //vuePlante.Children.Add(btnPlante);
+                StackLayout textPlante = new StackLayout();
+                textPlante.Children.Add(nomPlante);
+                textPlante.Children.Add(especePlante);
 
-                //// ajout dynamique de boutons dans un stackLayout côté Xamarin
-                //lytContent.Children.Add(vuePlante);
+                //créer le stacklayout de la plante
+                StackLayout vuePlante = new StackLayout();
+                vuePlante.BackgroundColor = Color.FromRgb(rgbCouleurs[random, 0], rgbCouleurs[random, 1], rgbCouleurs[random, 2]);
+                btnPlante.WidthRequest = 300;
+                btnPlante.HeightRequest = 100;
+                //btnPlante.CornerRadius = 20;
+                vuePlante.Margin = 5;
+
+                //mettre les éléments créés dans ce stacklayout
+                vuePlante.Children.Add(textPlante);
+                vuePlante.Children.Add(btnPlante);
+
+                // ajout dynamique de boutons dans un stackLayout côté Xamarin
+                lytContent.Children.Add(vuePlante);
             }
+        }
+
+        //ok
+        async void VoirPlante(object sender, EventArgs e)
+        {
+            //enregistrer les plantes de la BD dans une liste
+            List<Plante> plantes = new List<Plante>();
+            plantes.AddRange(await App.Database.GetPlanteAsync());
+
+            //récupérer l'identifiant de la plante sur laquelle on a appuyé
+            Button buttonPlante = (Button)sender;
+            int idPlante = Convert.ToInt32(buttonPlante.Text);
+
+            Plante planteSelected = new Plante();
+
+            foreach (Plante plante in plantes)
+            {
+                //si l'id correspond
+                if (plante.ID_PLANTE == idPlante)
+                {
+                    //enregistrer cette plante
+                    planteSelected = plante;
+                }
+            }
+
+            //aller sur la page de détails de cette plante
+            await Navigation.PushAsync(new PageAjouterPlante
+            {
+                BindingContext = planteSelected
+            });
         }
     }
 }
