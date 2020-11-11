@@ -34,6 +34,10 @@
                    VerticalOptions="CenterAndExpand"
                    PlaceholderColor="#656565"
                    BackgroundColor="White"
+                   HorizontalOptions="Fill"
+                       Margin="25"
+                        HeightRequest="50"
+                        WidthRequest="50"   
                    
                    MaxLength="25"
                    />
@@ -43,16 +47,24 @@
                    VerticalOptions="CenterAndExpand"
                    PlaceholderColor="#656565"
                    BackgroundColor="White"
-                   MaxLength="25"
+                   HorizontalOptions="Fill"
+                       Margin="25"
+                        HeightRequest="50"
+                        WidthRequest="50" 
                    />
-                <Label Text="OU"/>
+                <Label Text="OU"
+                       HorizontalOptions="Center"
+                       />
                 <!-- btnAddEspece-->
                 <Entry x:Name="btnAddEspece"
                    Placeholder="Ajouter une espèce"
                    VerticalOptions="CenterAndExpand"
                    PlaceholderColor="#656565"
                    BackgroundColor="White"
-                   MaxLength="25"
+                   HorizontalOptions="Fill"
+                       Margin="25"
+                        HeightRequest="50"
+                        WidthRequest="50" 
                    />
                 <!-- entryNotes-->
                 <Entry x:Name="entryNotes"
@@ -60,7 +72,10 @@
                    VerticalOptions="CenterAndExpand"
                    PlaceholderColor="#656565"
                    BackgroundColor="White"
-                   MaxLength="25"
+                   HorizontalOptions="Fill"
+                       Margin="25"
+                        HeightRequest="50"
+                        WidthRequest="50" 
                 />
             </StackLayout>
             <!-- <Entry Placeholder="Ajouter une espèce"/>-->

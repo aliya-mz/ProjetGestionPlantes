@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetGestionPlantes.PageQRcode">
+    <ScrollView  BackgroundColor="#CDF1CE" >
+        <StackLayout>
+            <Frame x:Name="frmQrCode" 
+                   VerticalOptions="CenterAndExpand"
+                   BackgroundColor="White"
+                  HeightRequest="200"
+                   Padding="0.8*"
+                   Margin="50"
+                   CornerRadius="40"
+                   />
+            <!-- btnImprimer -->
+            <Button x:Name="btnImprimer"
+                   VerticalOptions="CenterAndExpand"
+                   BackgroundColor="White"
+                   Text="Imprimer"
+                   TextColor="#656565"
+                    HeightRequest="50"
+                   Margin="20,0,20,100"
+                    CornerRadius="10"
+                   
+                   />
+            <!-- L,T,R,B Margin -->
+
+
+            <Button x:Name="btnImprimerPlusTard"
+                   VerticalOptions="CenterAndExpand"
+                   BackgroundColor="#CDF1CE"
+                   Text="Imprimer plus tard"
+                   TextColor="#656565"
+                    HeightRequest="50"
+                    Margin="20,0,20,100"
+                    CornerRadius="10">
+                
+            </Button>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
