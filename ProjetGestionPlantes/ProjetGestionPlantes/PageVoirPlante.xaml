@@ -49,33 +49,61 @@
 }               RADIUS ET EMPLACEMENT DES ENTRY A FAIRE -->
                 
                 <!-- info arrosage -->
-                <Entry x:Name="entryInfo"
-                   Placeholder="Information arrosage"
+                
+                <Label x:Name="entryInfo"
+                   Text="info Arrosage "
                    VerticalOptions="CenterAndExpand"
-                   PlaceholderColor="#656565"
                    BackgroundColor="White"
-                   
-                   MaxLength="25" HorizontalOptions="CenterAndExpand"
-                   />
+                   HorizontalOptions= "Fill"
+                       Padding="0.8*"
+                       Margin="25"
+                        HeightRequest="100"
+                        WidthRequest="50"
+                   ></Label>
+
+                <!-- button arrosage -->
+                <Button x:Name="btnArrosage"
+                 Text="Plante arrosée"
+                   VerticalOptions="CenterAndExpand"
+                   BackgroundColor="#C4C4C4"
+                   Clicked="OnClickArroser"
+                   HeightRequest="15"
+                   WidthRequest="10"
+                   Padding="0.8*"
+                   Margin="5"
+                   CornerRadius="60"
+                        
+                />
                 <!-- note -->
                 <Entry x:Name="entryNote"
                     Placeholder="Note"
                    VerticalOptions="CenterAndExpand"
                    PlaceholderColor="#656565"
                    BackgroundColor="White"
-                   MaxLength="25" HorizontalOptions="CenterAndExpand"
+                   MaxLength="25" HorizontalOptions="Fill"
+                       Margin="25"
+                        HeightRequest="100"
+                        WidthRequest="50"
                    />
                 <!-- button qr code-->
-                <Button x:Name="btnQrCode"
-                   Text="QR code"
+                <Frame x:Name="btnQrCode"
                    VerticalOptions="CenterAndExpand"
-                   BackgroundColor="#C4C4C4"
-                   />
+                   BackgroundColor="White"
+                       CornerRadius="35"
+                       Padding="0.8*"
+                       Margin="60"
+                        HeightRequest="180"
+                     
+                   >
+                </Frame>
                 <!-- button imprimer-->
                 <Button x:Name="btnImprimer"
                  Text="Imprimer"
                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="#C4C4C4"
+                        HorizontalOptions="Fill"
+                       Margin="95"
+                        HeightRequest="40"
                 />
             </StackLayout>
             <!-- <Entry Placeholder="Ajouter une espèce"/>-->

@@ -52,6 +52,7 @@
                    VerticalOptions="CenterAndExpand"
                    PlaceholderColor="#656565"
                    BackgroundColor="White"
+                    
                    MaxLength="25" HorizontalOptions="Fill"
                    />
                     <!-- Arrosage -->
