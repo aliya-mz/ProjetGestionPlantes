@@ -47,22 +47,3 @@ namespace ProjetGestionPlantes
         }
     }
 }
-
-//A METTRE DANS PAGE_AJOUTER_PLANTE.XAML.CS
-
-//async void OnClickCreate(object sender, EventArgs e)
-//{
-//    if (!string.IsNullOrWhiteSpace(entryNom.Text) && !string.IsNullOrWhiteSpace(entryNotes.Text) && !string.IsNullOrWhiteSpace(entryEspece.Text))
-//    {
-//        //Ajout d'une plante avec les propriétés entrées dans le formulaire
-//        await App.Database.SavePlanteAsync(new Plante
-//        {
-//            Nom = entryNom.Text,
-//            Notes = int.Parse(entryNotes.Text),
-//            IdEspece = int.Parse(entryEspece.Text),
-//        });
-
-//        //vider les champs
-//        entryNom.Text = entryNotes.Text = entryEspece.Text = string.Empty;
-//    }
-//}

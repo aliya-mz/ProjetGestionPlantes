@@ -43,10 +43,8 @@ namespace ProjetGestionPlantes
             //PAGE CAMERA (???)
 
             //scanner le code qr et récupérer l'id de la plante qui est le texte utilisé pour le générer
-
-            //afficher les informations d'arrosage de la plante (dans combien de temps il faut l'arroser ?)
-            //afficher le bouton permettant de dire qu'on l'a arrosée
             //afficher les emojis en fonction de l'état d'arrosage de la plante (heureuse si elle n'a pas besoin d'être arrosée, moyen si elle doit être arrosée aujourd'hui, triste si un arrosage a été manqué (la veille ou plus))
+            //pour connaître l'état de la plante, utiliser la fonction DonnerEtatPlante
         }
 
         protected override void OnAppearing()
@@ -137,6 +135,35 @@ namespace ProjetGestionPlantes
             {
                 BindingContext = planteSelected
             });
+        }
+
+        //renvoie l'état 
+        private int DonnerEtatPlante(Plante plante, Espece espece)
+        {
+            //Calcul de l'état de la plante - - - - - - - - - - - - - - - - - - -  - - - 
+            //récupérer l'espèce à partir de la plante
+            //Espece espece = App.Database.GetEspeceByIdAsync(plante.IdEspece);
+
+
+            //0 = heureux, 1 = moyen, 2 = triste
+            int etat;
+            //si on n'a pas encore atteint le moment où la plante doit être arrosée
+            if ((plante.dernierArrosage - DateTime.Now).TotalDays <= espece.FrequArrosage)
+            {
+                //la plante est heureuse
+                etat = 0;
+            }
+            //si la plante doit être arrosée aujourd'hui
+            else if ((plante.dernierArrosage - DateTime.Now).TotalDays == espece.FrequArrosage)
+            {
+                etat = 1;
+            }
+            //si on a oublié un arrosage
+            else
+            {
+                etat = 2;
+            }
+            return etat;
         }
     }
 }

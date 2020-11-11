@@ -47,3 +47,6 @@ C:\Users\michi.odk\Desktop\P3A\NVTECH\ProjetGestionPlantes\ProjetGestionPlantes\
 C:\Users\michi.odk\Desktop\P3A\NVTECH\ProjetGestionPlantes\ProjetGestionPlantes\ProjetGestionPlantes\obj\Debug\netstandard2.0\ref\ProjetGestionPlantes.dll
 C:\Users\michi.odk\Desktop\P3A\NVTECH\ProjetGestionPlantes\ProjetGestionPlantes\ProjetGestionPlantes\obj\Debug\netstandard2.0\ProjetGestionPlantes.pdb
 >>>>>>> Michi
+C:\Users\aliya.mz\Documents\ProjetGestionPlantes\ProjetGestionPlantes\ProjetGestionPlantes\obj\Debug\netstandard2.0\PageAjouterEspece.xaml.g.cs
+C:\Users\aliya.mz\Documents\ProjetGestionPlantes\ProjetGestionPlantes\ProjetGestionPlantes\obj\Debug\netstandard2.0\ProjetGestionPlantes.csproj.CoreCompileInputs.cache
+C:\Users\aliya.mz\Documents\ProjetGestionPlantes\ProjetGestionPlantes\ProjetGestionPlantes\obj\Debug\netstandard2.0\XamlC.stamp
