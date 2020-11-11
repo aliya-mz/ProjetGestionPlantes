@@ -19,11 +19,16 @@ namespace ProjetGestionPlantes
         public Task<List<Plante>> GetPlanteAsync()
         {
             return _database.Table<Plante>().ToListAsync();
-        }
+        }        
 
         public Task<int> SavePlanteAsync(Plante plante)
         {
             return _database.InsertAsync(plante);
+        }
+
+        public Task<List<Plante>> GetPlanteByIdAsync(int id)
+        {
+            return _database.QueryAsync<Plante>("SELECT * FROM Plante WHERE ID_PLANTE = " + id);
         }
 
         //gestion de la table Espece
@@ -35,6 +40,11 @@ namespace ProjetGestionPlantes
         public Task<int> SaveEspeceAsync(Espece espece)
         {
             return _database.InsertAsync(espece);
+        }
+
+        public Task<List<Espece>> GetEspeceByIdAsync(int id)
+        {
+            return _database.QueryAsync<Espece>("SELECT * FROM Espece WHERE ID_ESPECE = " + id);
         }
     }
 }

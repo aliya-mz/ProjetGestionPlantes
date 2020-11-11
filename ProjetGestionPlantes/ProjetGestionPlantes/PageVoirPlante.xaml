@@ -119,8 +119,7 @@
                         BackgroundColor="White"
                         Clicked="OnClickSaveInfo"
                         HeightRequest="90"
-                        WidthRequest="400
-                    "
+                        WidthRequest="400"
                         TextColor="#656565"               
                     />
         </Frame>
