@@ -8,7 +8,7 @@
                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="White"
                   HeightRequest="200"
-                   Padding="0.8*"
+                   Padding="20"
                    Margin="50"
                    CornerRadius="40"
                    />

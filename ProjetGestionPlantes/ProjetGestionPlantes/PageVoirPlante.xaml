@@ -55,7 +55,8 @@
                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="White"
                    HorizontalOptions= "Fill"
-                       Padding="0.8*"
+                       
+                       Padding="10"
                        Margin="25"
                         HeightRequest="100"
                         WidthRequest="50"
@@ -69,7 +70,7 @@
                    Clicked="OnClickArroser"
                    HeightRequest="15"
                    WidthRequest="10"
-                   Padding="0.8*"
+                   Padding="10"
                    Margin="5"
                    CornerRadius="60"
                         
@@ -90,7 +91,7 @@
                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="White"
                        CornerRadius="35"
-                       Padding="0.8*"
+                       Padding="10"
                        Margin="60"
                         HeightRequest="180"
                      
