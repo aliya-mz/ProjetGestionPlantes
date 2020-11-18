@@ -58,10 +58,19 @@
                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="White"
                    HorizontalOptions= "Fill"
+<<<<<<< master
                    Padding="10"
                    Margin="25"
                    HeightRequest="100"
                    WidthRequest="50"/>
+=======
+                       
+                       Padding="10"
+                       Margin="25"
+                        HeightRequest="100"
+                        WidthRequest="50"
+                   ></Label>
+>>>>>>> update
 
                 <!-- button arrosage -->
                 <Button x:Name="btnArrosage"
@@ -91,10 +100,19 @@
                 <Frame x:Name="btnQrCode"
                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="White"
+<<<<<<< master
                    CornerRadius="35"
                    Padding="10"
                    Margin="60"
                    HeightRequest="180">
+=======
+                       CornerRadius="35"
+                       Padding="10"
+                       Margin="60"
+                        HeightRequest="180"
+                     
+                   >
+>>>>>>> update
                 </Frame>
                 
                 <!-- button imprimer -->
