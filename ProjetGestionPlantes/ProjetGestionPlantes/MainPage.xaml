@@ -3,24 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetGestionPlantes.MainPage">
 
+    <!--
+        PROJET : Gestionnaire de Plantes
+        AUTEURS : Michi Odaka & Aliya Myaz & Letitia Alves Guastti (I.FA-P3A)		
+        DESC. : 
+        VERSION : 02.09.2020 v.1
+    -->
+
     <Grid  ColumnSpacing="0" RowSpacing="0">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.5*" />
+            <ColumnDefinition Width="0.5*"/>
             <ColumnDefinition Width="0.5*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.14*" />
-            <RowDefinition Height="0.72*" />
-            <RowDefinition Height="0.14*" />
+            <RowDefinition Height="0.14*"/>
+            <RowDefinition Height="0.72*"/>
+            <RowDefinition Height="0.14*"/>
         </Grid.RowDefinitions>
 
-        <!--En-tête de l'application (navigation)-->
+        <!-- En-tête de l'application (navigation) -->
         <Frame Grid.Row="0" >
-            <!--Logo de l'application-->
+            <!-- Logo de l'application -->
             <Image Source="logoPlante.jpg"/>
         </Frame>
         <Frame Grid.Row="0" Grid.Column="1">
-            <!--Bouton qui permet d'accéder à la caméra (mettre l'image caméra sur le bouton)-->
+            <!-- Bouton qui permet d'accéder à la caméra (mettre l'image caméra sur le bouton) -->
             <ImageButton Source="camera.jpg"
                         x:Name="btnCamera" 
                         CornerRadius="60"
@@ -29,32 +36,28 @@
                         BackgroundColor="#EEEDED"
                         Clicked="CallCamera"
                         HeightRequest="50"
-                        WidthRequest="50"                                      
-                    />
+                        WidthRequest="50"/>
         </Frame>
 
-        <!--Corps de l'application-->
+        <!-- Corps de l'application -->
         <ScrollView  Grid.Row="1" Grid.ColumnSpan="2" >
-            <StackLayout x:Name="lytContent"  BackgroundColor="White" Padding="10,10,10,10" >
-
-            </StackLayout>
+            <StackLayout x:Name="lytContent"  BackgroundColor="White" Padding="10,10,10,10"/>
         </ScrollView>
 
-        <!--Pied de page de l'application (navigation)-->
+        <!-- Pied de page de l'application (navigation) -->
         <Frame HeightRequest="100"  WidthRequest="100" Grid.Row="2" Grid.ColumnSpan="2">
-            <!--Bouton qui permet d'accéder au formulaire pour ajouter une plante-->
+            <!-- Bouton qui permet d'accéder au formulaire pour ajouter une plante -->
             <Button x:Name="btnAddPlante" 
                         Text="+"
                         CornerRadius="60"
                         VerticalOptions="Center"
                         HorizontalOptions="Center"
                         BackgroundColor="#CDF1CE"
-                        Clicked="OnClick"
+                        Clicked="AjouterPlante_Onclick"
                         HeightRequest="50"
                         WidthRequest="50"
                         FontSize="20"
-                        TextColor="#656565"               
-                    />
+                        TextColor="#656565"/>
         </Frame>
     </Grid>
 

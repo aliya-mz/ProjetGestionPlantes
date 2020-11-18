@@ -12,9 +12,11 @@ namespace ProjetGestionPlantes
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PageQRcode : ContentPage
     {
+        static string valueQRCode = "Bonjour";
         public PageQRcode()
         {
             InitializeComponent();
+            frmQrCode.BarcodeValue = valueQRCode;
         }
     }
 }

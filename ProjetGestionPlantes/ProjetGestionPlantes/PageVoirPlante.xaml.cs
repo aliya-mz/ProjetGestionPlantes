@@ -47,7 +47,7 @@ namespace ProjetGestionPlantes
         private void OnClickArroser(object sender, EventArgs args)
         {
             //mettre à jour l'enregistrement (les notes)
-            plante.dernierArrosage = DateTime.Now;            
+            plante.dernierArrosage = DateTime.Now;
         }
 
         async void AfficherInfosPlante(int plante)

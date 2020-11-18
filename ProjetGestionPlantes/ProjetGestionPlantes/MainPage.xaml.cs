@@ -17,12 +17,17 @@ namespace ProjetGestionPlantes
             InitializeComponent();
         }
 
-        private void OnClick(object sender, EventArgs args)
+        private async void AjouterPlante_Onclick(object sender, EventArgs args)
         {
-            //test
-            Button button = (Button)sender;
-            button.Text = "réussi";
+            PageAjouterPlante pageAjouterPlante = new PageAjouterPlante();
+            await Navigation.PushAsync(pageAjouterPlante);
         }
+        //private void OnClick(object sender, EventArgs args)
+        //{
+        //test
+        //Button button = (Button)sender;
+        //button.Text = "réussi";
+        //}
 
         //async void Onclick(object sender, EventArgs args)
         //{

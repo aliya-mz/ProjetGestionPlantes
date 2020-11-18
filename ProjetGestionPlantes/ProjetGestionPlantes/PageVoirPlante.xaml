@@ -2,64 +2,66 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjetGestionPlantes.PageVoirPlante">
+    
+    <!--
+        PROJET : Gestionnaire de Plantes
+        AUTEURS : Michi Odaka & Aliya Myaz & Letitia Alves Guastti (I.FA-P3A)		
+        DESC. : 
+        VERSION : 02.09.2020 v.1
+    -->
+    
     <Grid  ColumnSpacing="0" RowSpacing="0">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.5*" />
-            <ColumnDefinition Width="0.5*" />
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.14*" />
-            <RowDefinition Height="0.72*" />
-            <RowDefinition Height="0.14*" />
+            <RowDefinition Height="0.14*"/>
+            <RowDefinition Height="0.72*"/>
+            <RowDefinition Height="0.14*"/>
         </Grid.RowDefinitions>
 
-        <!--En-tête de l'application (navigation)-->
+        <!-- En-tête de l'application (navigation) -->
         <Frame Grid.Row="0" >
-            <!--Nom et espèce de la plante -->
-            <Label Text="Nom
-                   
-                   Espèce"
+            <!-- Nom et espèce de la plante -->
+            <Label Text="Nom espèce"
                    FontSize="20"
-                   TextColor="#C4C4C4">
-                
-            </Label>
-           
+                   TextColor="#C4C4C4"/>
         </Frame>
+        
         <Frame Grid.Row="0" Grid.Column="1">
-            <!-- Retour a la page d'accueil-->
+            <!-- Retour a la page d'accueil -->
             <Button x:Name="btnReturnToMain" 
-                        Text="Retour"
-                        FontSize="8"
-                        CornerRadius="60"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Center"
-                        BackgroundColor="#CDF1CE"
-                        Clicked="OnClickReturn"
-                        HeightRequest="50"
-                        WidthRequest="50"
-                        TextColor="#656565"               
-                    />
+                    Text="Retour"
+                    FontSize="8"
+                    CornerRadius="60"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    BackgroundColor="#CDF1CE"
+                    Clicked="OnClickReturn"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                    TextColor="#656565"/>
         </Frame>
 
         <!--Corps de l'application-->
-        <ScrollView  Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="#CDF1CE" >
+        <ScrollView  Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="#CDF1CE">
             <StackLayout>
-
-                <!-- COULEUR BORDURE
-}               RADIUS ET EMPLACEMENT DES ENTRY A FAIRE -->
+                <!-- 
+                COULEUR BORDURE
+}               RADIUS ET EMPLACEMENT DES ENTRY A FAIRE
+                -->
                 
                 <!-- info arrosage -->
-                
                 <Label x:Name="entryInfo"
                    Text="info Arrosage "
                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="White"
                    HorizontalOptions= "Fill"
-                       Padding="0.8*"
-                       Margin="25"
-                        HeightRequest="100"
-                        WidthRequest="50"
-                   ></Label>
+                   Padding="10"
+                   Margin="25"
+                   HeightRequest="100"
+                   WidthRequest="50"/>
 
                 <!-- button arrosage -->
                 <Button x:Name="btnArrosage"
@@ -69,59 +71,57 @@
                    Clicked="OnClickArroser"
                    HeightRequest="15"
                    WidthRequest="10"
-                   Padding="0.8*"
+                   Padding="10"
                    Margin="5"
-                   CornerRadius="60"
-                        
-                />
+                   CornerRadius="60"/>
+                
                 <!-- note -->
                 <Entry x:Name="entryNote"
                     Placeholder="Note"
                    VerticalOptions="CenterAndExpand"
                    PlaceholderColor="#656565"
                    BackgroundColor="White"
-                   MaxLength="25" HorizontalOptions="Fill"
-                       Margin="25"
-                        HeightRequest="100"
-                        WidthRequest="50"
-                   />
-                <!-- button qr code-->
+                   MaxLength="25" 
+                   HorizontalOptions="Fill"
+                   Margin="25"
+                   HeightRequest="100"
+                   WidthRequest="50"/>
+                
+                <!-- button qr code -->
                 <Frame x:Name="btnQrCode"
                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="White"
-                       CornerRadius="35"
-                       Padding="0.8*"
-                       Margin="60"
-                        HeightRequest="180"
-                     
-                   >
+                   CornerRadius="35"
+                   Padding="10"
+                   Margin="60"
+                   HeightRequest="180">
                 </Frame>
-                <!-- button imprimer-->
+                
+                <!-- button imprimer -->
                 <Button x:Name="btnImprimer"
                  Text="Imprimer"
                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="#C4C4C4"
-                        HorizontalOptions="Fill"
-                       Margin="95"
-                        HeightRequest="40"
-                />
+                   HorizontalOptions="Fill"
+                   Margin="95"
+                   HeightRequest="40"/>
+                
             </StackLayout>
-            <!-- <Entry Placeholder="Ajouter une espèce"/>-->
+            <!-- <Entry Placeholder="Ajouter une espèce"/> -->
         </ScrollView>
-        <!--Pied de page de l'application (navigation)-->
+        <!--Pied de page de l'application (navigation) -->
         <Frame HeightRequest="100"  WidthRequest="100" Padding="0" Grid.Row="2" Grid.ColumnSpan="2">
-            <!--Bouton qui permet d'accéder au formulaire pour ajouter une plante-->
+            <!-- Bouton qui permet d'accéder au formulaire pour ajouter une plante -->
             <Button x:Name="btnSaveInfoPlant" 
-                        Text="Enregistrer"
-                        FontSize="15"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Center"
-                        BackgroundColor="White"
-                        Clicked="OnClickSaveInfo"
-                        HeightRequest="90"
-                        WidthRequest="400"
-                        TextColor="#656565"               
-                    />
+                    Text="Enregistrer"
+                    FontSize="15"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    BackgroundColor="White"
+                    Clicked="OnClickSaveInfo"
+                    HeightRequest="90"
+                    WidthRequest="400"
+                    TextColor="#656565"/>
         </Frame>
     </Grid>
 
