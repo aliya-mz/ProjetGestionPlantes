@@ -12,11 +12,10 @@
         VERSION : 02.09.2020 v.1
     -->
 
-    <ScrollView  BackgroundColor="#CDF1CE" >
+    <ScrollView  BackgroundColor="#CDF1CE">
         <StackLayout>
-<<<<<<< master
             <!-- QR Code -->
-            <zxing:ZXingBarcodeImageView 
+            <zxing:ZXingBarcodeImageView
                 IsVisible="True" 
                 x:Name="frmQrCode" 
                 VerticalOptions="CenterAndExpand"
@@ -29,18 +28,8 @@
                         Width="200" 
                         Height="200"/>
                     </zxing:ZXingBarcodeImageView.BarcodeOptions>
-            </zxing:ZXingBarcodeImageView>
-            
-=======
-            <Frame x:Name="frmQrCode" 
-                   VerticalOptions="CenterAndExpand"
-                   BackgroundColor="White"
-                  HeightRequest="200"
-                   Padding="20"
-                   Margin="50"
-                   CornerRadius="40"
-                   />
->>>>>>> update
+                </zxing:ZXingBarcodeImageView>
+
             <!-- btnImprimer -->
             <Button x:Name="btnImprimer"
                    VerticalOptions="CenterAndExpand"

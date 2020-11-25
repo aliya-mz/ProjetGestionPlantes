@@ -12,35 +12,36 @@ namespace ProjetGestionPlantes
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PageVoirPlante : ContentPage
     {
-        static Plante plante = new Plante();
-        static Espece espece = new Espece();
+        static int idPlante;
+        static Plante plante;
 
-        public PageVoirPlante()
+        public PageVoirPlante(int id_Plante)
         {
             InitializeComponent();
-
-
+            idPlante = id_Plante;
         }
 
-        protected override void OnAppearing()
+        protected override void OnDisappearing()
         {
-            base.OnAppearing();
+            base.OnDisappearing();
 
-            //récupérer le Text du bouton qui a mené sur cette page
-            //Plante plante = BindingContext;
+            //récupérer la plante à partir de l'id
+            //plante = App.Database.GetPlanteByIdAsync(idPlante);                 
+            
+            //Afficher les information            
+            AfficherInfosPlante(plante);
+        }       
 
-            //Afficher les information
-            //AfficherInfosPlante(plante);
-        }
-
-        private void OnClickReturn(object sender, EventArgs args)
+        async void OnClickReturn(object sender, EventArgs e)
         {
-            //retourner sur la page d'accueil
+            // retourner sur la page d'accueil
+            await Navigation.PopAsync(false);
         }
 
         private void OnClickSaveInfo(object sender, EventArgs args)
         {
             //mettre à jour l'enregistrement (les notes)
+            
             plante.Notes = entryNote.Text;
         }
 
@@ -50,7 +51,7 @@ namespace ProjetGestionPlantes
             plante.dernierArrosage = DateTime.Now;
         }
 
-        async void AfficherInfosPlante(int plante)
+        async void AfficherInfosPlante(Plante plante)
         {
             //Afficher les infos de la plante, enregistrée dans la BD, à partir de son id
         }

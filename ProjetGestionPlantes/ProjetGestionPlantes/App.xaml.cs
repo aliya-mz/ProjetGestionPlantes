@@ -28,7 +28,10 @@ namespace ProjetGestionPlantes
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();  
+            
+            //créer la page racine de l'application
+            MainPage = new NavigationPage(new MainPage());            
         }
 
         protected override void OnStart()

@@ -16,6 +16,13 @@ namespace ProjetGestionPlantes
         {
             InitializeComponent();
         }
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            //vider les champs
+            entryEspece.Text = entryJours.Text = entryEspece.Text = string.Empty;
+        }
+
         async void OnClickAddEspece(object sender, EventArgs args)
         {
             if (!string.IsNullOrWhiteSpace(entryEspece.Text) && !string.IsNullOrWhiteSpace(entryJours.Text) && !string.IsNullOrWhiteSpace(entryEspece.Text))
@@ -25,12 +32,10 @@ namespace ProjetGestionPlantes
                 {
                     NomEspece = entryEspece.Text,
                     FrequArrosage = int.Parse(entryJours.Text),
-                });
-
-                //vider les champs
-                entryEspece.Text = entryJours.Text = entryEspece.Text = string.Empty;
+                });                
 
                 //retourner sur la page d'ajout de plante
+                await Navigation.PopAsync(false);
             }
         }
     }
