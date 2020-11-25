@@ -6,8 +6,7 @@
     <!--
         PROJET : Gestionnaire de Plantes
         AUTEURS : Michi Odaka & Aliya Myaz & Letitia Alves Guastti (I.FA-P3A)		
-        DESC. : 
-        VERSION : 02.09.2020 v.1
+        DESC. : Page qui permet de visualiser les informations d'une plante        
     -->
     
     <Grid  ColumnSpacing="0" RowSpacing="0">
@@ -61,8 +60,12 @@
                    Padding="10"
                    Margin="25"
                    HeightRequest="100"
+<<<<<<< master
                    WidthRequest="50">
                 </Label>
+=======
+                   WidthRequest="50"/>
+>>>>>>> Update
 
                 <!-- button arrosage -->
                 <Button x:Name="btnArrosage"
@@ -95,20 +98,28 @@
                    CornerRadius="35"
                    Padding="10"
                    Margin="60"
+<<<<<<< master
                    HeightRequest="180">
                 </Frame>
                 
+=======
+                   HeightRequest="180"/>
+
+
+>>>>>>> Update
                 <!-- button imprimer -->
-                <Button x:Name="btnImprimer"
-                 Text="Imprimer"
-                   VerticalOptions="CenterAndExpand"
+                    <Button
+                        x:Name="btnImprimer"
+                        Text="Imprimer"
+                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="#C4C4C4"
                    HorizontalOptions="Fill"
                    Margin="95"
                    HeightRequest="40"/>
-                
+
+
+                    <!-- <Entry Placeholder="Ajouter une espèce"/> -->
             </StackLayout>
-            <!-- <Entry Placeholder="Ajouter une espèce"/> -->
         </ScrollView>
         <!--Pied de page de l'application (navigation) -->
         <Frame HeightRequest="100"  WidthRequest="100" Padding="0" Grid.Row="2" Grid.ColumnSpan="2">
