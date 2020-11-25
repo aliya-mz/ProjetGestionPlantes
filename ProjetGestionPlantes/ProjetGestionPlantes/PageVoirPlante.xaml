@@ -58,12 +58,15 @@
                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="White"
                    HorizontalOptions= "Fill"
+<<<<<<< HEAD
 <<<<<<< master
                    Padding="10"
                    Margin="25"
                    HeightRequest="100"
                    WidthRequest="50"/>
 =======
+=======
+>>>>>>> Michi
                        
                        Padding="10"
                        Margin="25"
