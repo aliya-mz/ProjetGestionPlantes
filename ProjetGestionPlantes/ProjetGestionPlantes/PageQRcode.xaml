@@ -28,6 +28,7 @@
                         Width="200" 
                         Height="200"/>
                     </zxing:ZXingBarcodeImageView.BarcodeOptions>
+<<<<<<< HEAD
 <<<<<<< master
             </zxing:ZXingBarcodeImageView>
 
@@ -42,6 +43,9 @@
 =======
                 </zxing:ZXingBarcodeImageView>
 >>>>>>> Update
+=======
+                </zxing:ZXingBarcodeImageView>
+>>>>>>> Aliya
 
             <!-- btnImprimer -->
             <Button x:Name="btnImprimer"
