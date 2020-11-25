@@ -24,7 +24,7 @@
         <!-- En-tête de l'application (navigation) -->
         <Frame Grid.Row="0" >
             <!-- Logo de l'application -->
-            <Image Source="logoPlante.jpg"/>
+            <Image Source="logo.png"/>
         </Frame>
         <Frame Grid.Row="0" Grid.Column="1"/>
 

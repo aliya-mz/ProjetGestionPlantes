@@ -13,8 +13,9 @@
     <Grid  ColumnSpacing="0" RowSpacing="0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.5*"/>
-            <ColumnDefinition Width="0.5*" />
+            <ColumnDefinition Width="0.5*" />                       
         </Grid.ColumnDefinitions>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="0.14*"/>
             <RowDefinition Height="0.72*"/>
@@ -24,11 +25,16 @@
         <!-- En-tête de l'application (navigation) -->
         <Frame Grid.Row="0" >
             <!-- Logo de l'application -->
-            <Image Source="logoPlante.jpg"/>
+            <Image Source="logo.png"
+                   Aspect="AspectFit" 
+                   
+                   />
         </Frame>
+        
         <Frame Grid.Row="0" Grid.Column="1">
             <!-- Bouton qui permet d'accéder à la caméra (mettre l'image caméra sur le bouton) -->
-            <ImageButton Source="camera.jpg"
+            <ImageButton Source="camera.png"
+                         Aspect="AspectFit"
                         x:Name="btnCamera" 
                         CornerRadius="60"
                         VerticalOptions="Center"
@@ -58,6 +64,7 @@
                         WidthRequest="50"
                         FontSize="20"
                         TextColor="#656565"/>
+        
         </Frame>
     </Grid>
 
