@@ -17,7 +17,7 @@
             <!-- QR Code -->
             <zxing:ZXingBarcodeImageView
                 IsVisible="True" 
-                x:Name="frmQrCode" 
+                x:Name="zxiQrCode" 
                 VerticalOptions="CenterAndExpand"
                 BarcodeFormat="QR_CODE" 
                 HeightRequest="200" 
@@ -28,24 +28,17 @@
                         Width="200" 
                         Height="200"/>
                     </zxing:ZXingBarcodeImageView.BarcodeOptions>
-<<<<<<< HEAD
-<<<<<<< master
+
             </zxing:ZXingBarcodeImageView>
 
             <Frame x:Name="frmQrCode" 
                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="White"
-                  HeightRequest="200"
+                    HeightRequest="200"
                    Padding="20"
                    Margin="50"
                    CornerRadius="40"
                    />
-=======
-                </zxing:ZXingBarcodeImageView>
->>>>>>> Update
-=======
-                </zxing:ZXingBarcodeImageView>
->>>>>>> Aliya
 
             <!-- btnImprimer -->
             <Button x:Name="btnImprimer"

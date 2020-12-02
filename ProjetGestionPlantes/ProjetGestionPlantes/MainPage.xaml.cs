@@ -27,10 +27,16 @@ namespace ProjetGestionPlantes
         }
 
         //ok
-        async void AjouterPlante_Onclick(object sender, EventArgs e)
+        //async void AjouterPlante_Onclick(object sender, EventArgs e)
+        //{
+        //    await Navigation.PushAsync(new PageAjouterPlante());
+        //}
+
+
+        private void AjouterPlante_Onclick(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PageAjouterPlante());
-        }      
+            ((App)App.Current).ChangeScreen(new AnotherPage());
+        }
 
         async void CallCamera(object sender, EventArgs e)
         {

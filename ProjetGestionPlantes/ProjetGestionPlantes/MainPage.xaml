@@ -24,17 +24,18 @@
 
         <!-- En-tête de l'application (navigation) -->
         <Frame Grid.Row="0" >
+            <!--Source="logo.png"-->
             <!-- Logo de l'application -->
-            <Image Source="logo.png"
-                   Aspect="AspectFit" 
-                   
+            <Image 
+                   Aspect="AspectFit"                    
                    />
         </Frame>
         
         <Frame Grid.Row="0" Grid.Column="1">
             <!-- Bouton qui permet d'accéder à la caméra (mettre l'image caméra sur le bouton) -->
-            <ImageButton Source="camera.png"
-                         Aspect="AspectFit"
+            <!--Source="camera.png"-->
+            <ImageButton 
+                        Aspect="AspectFit"
                         x:Name="btnCamera" 
                         CornerRadius="60"
                         VerticalOptions="Center"

@@ -60,16 +60,8 @@
                    Padding="10"
                    Margin="25"
                    HeightRequest="100"
-<<<<<<< HEAD
-<<<<<<< master
                    WidthRequest="50">
                 </Label>
-=======
-                   WidthRequest="50"/>
->>>>>>> Update
-=======
-                   WidthRequest="50"/>
->>>>>>> Aliya
 
                 <!-- button arrosage -->
                 <Button x:Name="btnArrosage"
@@ -102,21 +94,9 @@
                    CornerRadius="35"
                    Padding="10"
                    Margin="60"
-<<<<<<< HEAD
-<<<<<<< master
                    HeightRequest="180">
                 </Frame>
-                
-=======
-                   HeightRequest="180"/>
 
-
->>>>>>> Update
-=======
-                   HeightRequest="180"/>
-
-
->>>>>>> Aliya
                 <!-- button imprimer -->
                     <Button
                         x:Name="btnImprimer"
