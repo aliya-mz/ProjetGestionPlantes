@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+<<<<<<< Updated upstream
+    <SelectedDevice>pixel_2_oreo_8_0_-_api_26</SelectedDevice>
+=======
+    <SelectedDevice>pixel_2_nougat_7_1_-_api_25</SelectedDevice>
+>>>>>>> Stashed changes
+    <AndroidDesignerPreferredTheme>Theme.AppCompat.Light.NoActionBar</AndroidDesignerPreferredTheme>
+  </PropertyGroup>
+</Project>
