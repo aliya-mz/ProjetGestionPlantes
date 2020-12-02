@@ -21,12 +21,12 @@ namespace ProjetGestionPlantes
             idPlante = id_Plante;
         }
 
-        protected override void OnDisappearing()
+        protected override void OnAppearing()
         {
-            base.OnDisappearing();
+            base.OnAppearing();
 
             //récupérer la plante à partir de l'id
-            //plante = App.Database.GetPlanteByIdAsync(idPlante);                 
+            //plante = App.Database.GetPlanteByIdAsync(idPlante);
             
             //Afficher les information            
             AfficherInfosPlante(plante);
@@ -38,12 +38,14 @@ namespace ProjetGestionPlantes
             ((App)App.Current).ChangeScreen(new MainPage());
         }
 
+        //ok
         private void OnClickSaveInfo(object sender, EventArgs args)
         {
             //mettre à jour l'enregistrement (les notes)            
             plante.Notes = entryNote.Text;
         }
 
+        //ok
         private void OnClickArroser(object sender, EventArgs args)
         {
             //mettre à jour l'enregistrement (les notes)

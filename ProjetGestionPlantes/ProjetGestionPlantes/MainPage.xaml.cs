@@ -22,6 +22,7 @@ namespace ProjetGestionPlantes
 
             base.OnAppearing();
             AfficherPlantes();
+            Console.WriteLine("OnAppearing : ok");
         }
 
         //ok

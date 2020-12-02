@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using SQLite;
+using System.Linq;
 
 namespace ProjetGestionPlantes
 {    
@@ -18,7 +19,7 @@ namespace ProjetGestionPlantes
         //gestion de la table Plante
         public Task<List<Plante>> GetPlanteAsync()
         {
-            return _database.Table<Plante>().ToListAsync();
+            return _database.Table<Plante>().ToListAsync();            
         }        
 
         public Task<int> SavePlanteAsync(Plante plante)
@@ -26,10 +27,19 @@ namespace ProjetGestionPlantes
             return _database.InsertAsync(plante);
         }
 
-        public Task<List<Plante>> GetPlanteByIdAsync(int id)
-        {
-            return _database.QueryAsync<Plante>("SELECT * FROM Plante WHERE ID_PLANTE = " + id);
-        }
+        //public Task<Plante> GetPlanteByIdAsync(int id)
+        //{
+        //    return _database.Table<Plante>().FirstOrDefault(plante => plante.ID_PLANTE == id);
+        //}
+
+        //public Plante GetCustomer(int id)
+        //{
+        //    lock (collisionLock)
+        //    {
+        //        return _database.Table<Plante>().
+        //          FirstOrDefault(customer => customer.Id == id);
+        //    }
+        //}
 
         //gestion de la table Espece
         public Task<List<Espece>> GetEspeceAsync()

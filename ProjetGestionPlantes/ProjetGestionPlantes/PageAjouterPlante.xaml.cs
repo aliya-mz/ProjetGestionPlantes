@@ -36,13 +36,13 @@ namespace ProjetGestionPlantes
                 {
                     Nom = entryNom.Text,
                     Notes = entryNotes.Text,
-                    dernierArrosage = default,
+                    dernierArrosage = DateTime.Now,
                     IdEspece = int.Parse(entryEspece.Text),
                 });
 
                 // retourner sur la page d'accueil
                 ((App)App.Current).ChangeScreen(new MainPage());
-            }             
+            }
         }
     }
 }
