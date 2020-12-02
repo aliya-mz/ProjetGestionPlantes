@@ -32,16 +32,15 @@ namespace ProjetGestionPlantes
             AfficherInfosPlante(plante);
         }       
 
-        async void OnClickReturn(object sender, EventArgs e)
+        private void OnClickReturn(object sender, EventArgs e)
         {
-            // retourner sur la page d'accueil
-            await Navigation.PopAsync(false);
+            //retourner sur la page d'accueil
+            ((App)App.Current).ChangeScreen(new MainPage());
         }
 
         private void OnClickSaveInfo(object sender, EventArgs args)
         {
-            //mettre à jour l'enregistrement (les notes)
-            
+            //mettre à jour l'enregistrement (les notes)            
             plante.Notes = entryNote.Text;
         }
 

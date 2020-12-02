@@ -27,8 +27,10 @@ namespace ProjetGestionPlantes
         async void OnClickCreate(object sender, EventArgs e)
         {
             //si les champs ont bien été remplis
-            if (!string.IsNullOrWhiteSpace(entryNom.Text) && !string.IsNullOrWhiteSpace(entryNotes.Text) && !string.IsNullOrWhiteSpace(entryEspece.Text))
+            if (!string.IsNullOrWhiteSpace(entryNom.Text) && !string.IsNullOrWhiteSpace(entryEspece.Text))
             {
+                Console.WriteLine("ïf : ok");
+
                 //Ajouter une plante vec les propriétés entrées dans le formulaire
                 await App.Database.SavePlanteAsync(new Plante
                 {
@@ -39,13 +41,8 @@ namespace ProjetGestionPlantes
                 });
 
                 // retourner sur la page d'accueil
-                await Navigation.PopAsync(false);
-            }
+                ((App)App.Current).ChangeScreen(new MainPage());
+            }             
         }
     }
 }
-
-
-//private void OnClickCreate(object sender, EventArgs args)
-//{
-//}
