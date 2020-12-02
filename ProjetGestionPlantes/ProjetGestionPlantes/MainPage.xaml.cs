@@ -33,10 +33,10 @@ namespace ProjetGestionPlantes
         //}
 
 
-        private void AjouterPlante_Onclick(object sender, EventArgs e)
-        {
-            ((App)App.Current).ChangeScreen(new AnotherPage());
-        }
+        //private void AjouterPlante_Onclick(object sender, EventArgs e)
+        //{
+        //    ((App)App.Current).ChangeScreen(new AnotherPage());
+        //}
 
         async void CallCamera(object sender, EventArgs e)
         {

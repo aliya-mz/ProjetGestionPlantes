@@ -16,7 +16,7 @@ namespace ProjetGestionPlantes
         public PageQRcode()
         {
             InitializeComponent();
-            frmQrCode.BarcodeValue = valueQRCode;
+            //frmQrCode.BarcodeValue = valueQRCode;
         }
     }
 }
