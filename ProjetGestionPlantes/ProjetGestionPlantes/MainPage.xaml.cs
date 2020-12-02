@@ -10,8 +10,6 @@ namespace ProjetGestionPlantes
 {
     public partial class MainPage : ContentPage
     {
-        //List<Button> boutonsPlantes = new List<Button>();
-
         public MainPage()
         {
             InitializeComponent();
@@ -24,17 +22,13 @@ namespace ProjetGestionPlantes
 
             base.OnAppearing();
             AfficherPlantes();
+            Console.WriteLine("OnAppearing : ok");
         }
 
         //ok
-        //async void AjouterPlante_Onclick(object sender, EventArgs e)
-        //{
-        //    await Navigation.PushAsync(new PageAjouterPlante());
-        //}
-
-
         private void AjouterPlante_Onclick(object sender, EventArgs e)
         {
+<<<<<<< HEAD
         //    ((App)App.Current).ChangeScreen(new AnotherPage());
         }
 
@@ -50,6 +44,10 @@ namespace ProjetGestionPlantes
 
             //await Navigation.PushAsync(new PageAjouterPlante());
         }
+=======
+            ((App)App.Current).ChangeScreen(new PageAjouterPlante());
+        }        
+>>>>>>> Michi
 
         //ok
         async void AfficherPlantes()
@@ -128,7 +126,8 @@ namespace ProjetGestionPlantes
 
             //récupérer le text du bouton cliqué
             //aller sur la page de détails de cette plante en envoyant en paramètres son id
-            await Navigation.PushAsync(new PageVoirPlante(1));
+            //await Navigation.PushAsync(new PageVoirPlante(1));
+            ((App)App.Current).ChangeScreen(new PageVoirPlante(1));
         }
 
         //renvoie l'état (à executer dans la page caméra)
@@ -161,31 +160,18 @@ namespace ProjetGestionPlantes
             }
             return etat;
         }
+
+        private void CallCamera(object sender, EventArgs e)
+        {
+            //aller sur la camera - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+            //Depuis la caméra :
+            //scanner le code qr et récupérer l'id de la plante qui est le texte utilisé pour le générer
+            //Récupérer les infos de la plante à partir de son id
+            //calculer l'état de la plante avec la fonction DonnerEtatPlante
+            //afficher les emojis en fonction de l'état d'arrosage de la plante
+
+            //await Navigation.PushAsync(new PageAjouterPlante());
+        }
     }
 }
-
-
-//private async void AjouterPlante_Onclick(object sender, EventArgs args)
-//{
-//    PageAjouterPlante pageAjouterPlante = new PageAjouterPlante();
-//    await Navigation.PushAsync(pageAjouterPlante);
-//}
-
-//private void OnClick(object sender, EventArgs args)
-//{
-//test
-//Button button = (Button)sender;
-//button.Text = "réussi";
-//}
-
-//async void Onclick(object sender, EventArgs args)
-//{
-//    //test
-//    Button button = (Button)sender;
-//    button.Text = "réussi";
-
-//    //aller sur la page pour ajouter une plante
-//    await Navigation.PushAsync(new PageAjouterPlante
-//    {
-//    });
-//}

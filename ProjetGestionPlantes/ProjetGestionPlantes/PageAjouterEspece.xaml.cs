@@ -32,11 +32,11 @@ namespace ProjetGestionPlantes
                 {
                     NomEspece = entryEspece.Text,
                     FrequArrosage = int.Parse(entryJours.Text),
-                });                
+                });
 
-                //retourner sur la page d'ajout de plante
-                await Navigation.PopAsync(false);
-            }
+                //retourner sur le formulaire d'ajout de plante
+                ((App)App.Current).ChangeScreen(new PageAjouterPlante());
+            }            
         }
     }
 }

@@ -21,30 +21,31 @@ namespace ProjetGestionPlantes
             idPlante = id_Plante;
         }
 
-        protected override void OnDisappearing()
+        protected override void OnAppearing()
         {
-            base.OnDisappearing();
+            base.OnAppearing();
 
             //récupérer la plante à partir de l'id
-            //plante = App.Database.GetPlanteByIdAsync(idPlante);                 
+            //plante = App.Database.GetPlanteByIdAsync(idPlante);
             
             //Afficher les information            
             AfficherInfosPlante(plante);
         }       
 
-        async void OnClickReturn(object sender, EventArgs e)
+        private void OnClickReturn(object sender, EventArgs e)
         {
-            // retourner sur la page d'accueil
-            await Navigation.PopAsync(false);
+            //retourner sur la page d'accueil
+            ((App)App.Current).ChangeScreen(new MainPage());
         }
 
+        //ok
         private void OnClickSaveInfo(object sender, EventArgs args)
         {
-            //mettre à jour l'enregistrement (les notes)
-            
+            //mettre à jour l'enregistrement (les notes)            
             plante.Notes = entryNote.Text;
         }
 
+        //ok
         private void OnClickArroser(object sender, EventArgs args)
         {
             //mettre à jour l'enregistrement (les notes)

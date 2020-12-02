@@ -27,7 +27,8 @@
             <!--Source="logo.png"-->
             <!-- Logo de l'application -->
             <Image 
-                   Aspect="AspectFit"                    
+                Source="goutte.png"
+                Aspect="AspectFit"                    
                    />
         </Frame>
         

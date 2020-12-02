@@ -27,11 +27,18 @@ namespace ProjetGestionPlantes
         public App()
         {
             InitializeComponent();
-
-            //MainPage = new MainPage();  
             
             //créer la page racine de l'application
-            MainPage = new NavigationPage(new MainPage());            
+            MainPage = new MainPage();
+        }
+
+        /// <summary>
+        /// Fonction qui permet de changer la page actuellement affichée.
+        /// </summary>
+        /// <param name="page">Page à afficher</param>        
+        public void ChangeScreen(Page page)
+        {
+            MainPage = page;
         }
 
         protected override void OnStart()

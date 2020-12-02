@@ -1,6 +1,6 @@
 ﻿/*
 Classe Plante qui stockera les données relatives à chaque plante 
- */
+*/
 using System;
 using SQLite;
 
