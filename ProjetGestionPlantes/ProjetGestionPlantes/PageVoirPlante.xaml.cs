@@ -14,11 +14,15 @@ namespace ProjetGestionPlantes
     {
         static int idPlante;
         static Plante plante;
+        //Valeur du QR Code
+        static string valueQRCode = "";
 
         public PageVoirPlante(int id_Plante)
         {
             InitializeComponent();
             idPlante = id_Plante;
+            //Récupère l'id de la plante et le définit comme la valeur du QR Code
+            zxingQrCode.BarcodeValue = Convert.ToString(idPlante);
         }
 
         protected override void OnAppearing()
