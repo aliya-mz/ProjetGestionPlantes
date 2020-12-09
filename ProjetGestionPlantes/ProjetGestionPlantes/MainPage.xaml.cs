@@ -40,6 +40,10 @@ namespace ProjetGestionPlantes
 
         private void AjouterPlante_Onclick(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> Michi
         //    ((App)App.Current).ChangeScreen(new AnotherPage());
         }
 
@@ -55,7 +59,14 @@ namespace ProjetGestionPlantes
 
             //await Navigation.PushAsync(new PageAjouterPlante());
         }
+<<<<<<< HEAD
 >>>>>>> update
+=======
+=======
+            ((App)App.Current).ChangeScreen(new PageAjouterPlante());
+        }        
+>>>>>>> Michi
+>>>>>>> Michi
 
         //ok
         async void AfficherPlantes()
