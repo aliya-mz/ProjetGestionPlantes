@@ -22,7 +22,6 @@ namespace ProjetGestionPlantes
 
             base.OnAppearing();
             AfficherPlantes();
-            Console.WriteLine("OnAppearing : ok");
         }
 
         //ok
@@ -30,6 +29,7 @@ namespace ProjetGestionPlantes
         {
 <<<<<<< Letitia
             ((App)App.Current).ChangeScreen(new PageAjouterPlante());
+<<<<<<< Letitia
 =======
         //async void AjouterPlante_Onclick(object sender, EventArgs e)
 >>>>>>> Update pageAjouterPlante button / Picker
@@ -37,6 +37,12 @@ namespace ProjetGestionPlantes
 
 
         private void CallCamera(object sender, EventArgs e)
+=======
+        }   
+
+
+        async void CallCamera(object sender, EventArgs e)
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
         {
             //aller sur la camera - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -44,13 +50,20 @@ namespace ProjetGestionPlantes
             //scanner le code qr et récupérer l'id de la plante qui est le texte utilisé pour le générer
             //Récupérer les infos de la plante à partir de son id
             //calculer l'état de la plante avec la fonction DonnerEtatPlante
+<<<<<<< Letitia
             //afficher les emojis en fonction de l'état d'arrosage de la plante
 <<<<<<< Letitia
+=======
+            //afficher les emojis en fonction de l'état d'arrobsage de la plante
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
 
             ((App)App.Current).ChangeScreen(new PageCamera());
         }
+<<<<<<< Letitia
 =======
         }        
+=======
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
 
 >>>>>>> Update pageAjouterPlante button / Picker
 
@@ -167,9 +180,12 @@ namespace ProjetGestionPlantes
             return etat;
         }
 <<<<<<< Letitia
+<<<<<<< Letitia
 =======
 
         
 >>>>>>> Update pageAjouterPlante button / Picker
+=======
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
     }
 }

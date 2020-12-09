@@ -25,9 +25,10 @@
         <!-- En-tête de l'application (navigation) -->
         <Frame Grid.Row="0" >
             <!-- Nom et espèce de la plante -->
-            <Label Text="Nom espèce"
+            <Label x:Name="lblNomEspece" 
+                   Text="Nom espèce"
                    FontSize="20"
-                   TextColor="#C4C4C4"/>
+                   TextColor="#C4C4C4"/>            
         </Frame>
         
         <Frame Grid.Row="0" Grid.Column="1">
