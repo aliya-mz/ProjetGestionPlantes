@@ -21,13 +21,13 @@ namespace ProjetGestionPlantes
         {
             base.OnAppearing();
             //vider les champs
-            entryNom.Text = entryNotes.Text = entryEspece.Text = string.Empty;
+            entryNom.Text = entryNotes.Text = string.Empty;
         }
 
         async void OnClickCreate(object sender, EventArgs e)
         {
             //si les champs ont bien été remplis
-            if (!string.IsNullOrWhiteSpace(entryNom.Text) && !string.IsNullOrWhiteSpace(entryEspece.Text))
+            if (!string.IsNullOrWhiteSpace(entryNom.Text))
             {
                 Console.WriteLine("ïf : ok");
 
@@ -37,7 +37,7 @@ namespace ProjetGestionPlantes
                     Nom = entryNom.Text,
                     Notes = entryNotes.Text,
                     dernierArrosage = DateTime.Now,
-                    IdEspece = int.Parse(entryEspece.Text),
+                   // IdEspece = int.Parse(entryEspece.Text),
                 });
 
                 // retourner sur la page d'accueil

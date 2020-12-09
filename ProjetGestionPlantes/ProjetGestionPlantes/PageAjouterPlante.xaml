@@ -48,29 +48,27 @@
                    HeightRequest="50"
                    WidthRequest="50"   
                    MaxLength="25"/>
-
-                <!-- entryEspece -->
-                <Entry x:Name="entryEspece"
-                    Placeholder="Séléctionner une espèce"
+                
+                <!-- Liste déroulante pickerEspece -->
+                <Picker x:Name="pickerEspece"
                    VerticalOptions="CenterAndExpand"
-                   PlaceholderColor="#656565"
                    BackgroundColor="White"
                    HorizontalOptions="Fill"
                    Margin="25"
                    HeightRequest="50"
                    WidthRequest="50"/>
 
+
                 <Label Text="OU"
                        HorizontalOptions="Center"/>
 
                 <!-- btnAddEspece -->
-                <Entry x:Name="btnAddEspece"
-                   Placeholder="Ajouter une espèce"
+                <Button x:Name="btnAddEspece"
                    VerticalOptions="CenterAndExpand"
-                   PlaceholderColor="#656565"
                    BackgroundColor="White"
                    HorizontalOptions="Fill"
                    Margin="25"
+                   Text="Ajouter une nouvelle espèce"
                    HeightRequest="50"
                    WidthRequest="50" />
                 
