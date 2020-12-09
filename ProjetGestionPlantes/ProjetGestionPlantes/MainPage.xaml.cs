@@ -28,7 +28,11 @@ namespace ProjetGestionPlantes
         //ok
         private void AjouterPlante_Onclick(object sender, EventArgs e)
         {
+<<<<<<< Letitia
             ((App)App.Current).ChangeScreen(new PageAjouterPlante());
+=======
+        //async void AjouterPlante_Onclick(object sender, EventArgs e)
+>>>>>>> Update pageAjouterPlante button / Picker
         }
 
 
@@ -41,9 +45,14 @@ namespace ProjetGestionPlantes
             //Récupérer les infos de la plante à partir de son id
             //calculer l'état de la plante avec la fonction DonnerEtatPlante
             //afficher les emojis en fonction de l'état d'arrosage de la plante
+<<<<<<< Letitia
 
             ((App)App.Current).ChangeScreen(new PageCamera());
         }
+=======
+        }        
+
+>>>>>>> Update pageAjouterPlante button / Picker
 
        
         //ok
@@ -157,5 +166,10 @@ namespace ProjetGestionPlantes
             }
             return etat;
         }
+<<<<<<< Letitia
+=======
+
+        
+>>>>>>> Update pageAjouterPlante button / Picker
     }
 }
