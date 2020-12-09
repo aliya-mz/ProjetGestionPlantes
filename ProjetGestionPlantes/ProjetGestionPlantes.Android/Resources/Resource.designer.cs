@@ -8310,16 +8310,16 @@ namespace ProjetGestionPlantes.Droid
 			public const int goutte = 2131165282;
 			
 			// aapt resource value: 0x7F070063
-			public const int goutte_img = 2131165283;
+			public const int ic_mtrl_chip_checked_black = 2131165283;
 			
 			// aapt resource value: 0x7F070064
-			public const int ic_mtrl_chip_checked_black = 2131165284;
+			public const int ic_mtrl_chip_checked_circle = 2131165284;
 			
 			// aapt resource value: 0x7F070065
-			public const int ic_mtrl_chip_checked_circle = 2131165285;
+			public const int ic_mtrl_chip_close_circle = 2131165285;
 			
 			// aapt resource value: 0x7F070066
-			public const int ic_mtrl_chip_close_circle = 2131165286;
+			public const int logo = 2131165286;
 			
 			// aapt resource value: 0x7F070067
 			public const int mtrl_snackbar_background = 2131165287;
@@ -8367,10 +8367,19 @@ namespace ProjetGestionPlantes.Droid
 			public const int notify_panel_notification_icon_bg = 2131165301;
 			
 			// aapt resource value: 0x7F070076
-			public const int tooltip_frame_dark = 2131165302;
+			public const int planteHeureux = 2131165302;
 			
 			// aapt resource value: 0x7F070077
-			public const int tooltip_frame_light = 2131165303;
+			public const int planteNormal = 2131165303;
+			
+			// aapt resource value: 0x7F070078
+			public const int planteTriste = 2131165304;
+			
+			// aapt resource value: 0x7F070079
+			public const int tooltip_frame_dark = 2131165305;
+			
+			// aapt resource value: 0x7F07007A
+			public const int tooltip_frame_light = 2131165306;
 			
 			static Drawable()
 			{
