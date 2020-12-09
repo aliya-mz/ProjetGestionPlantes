@@ -29,5 +29,7 @@ namespace ProjetGestionPlantes.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
+        
     }
 }

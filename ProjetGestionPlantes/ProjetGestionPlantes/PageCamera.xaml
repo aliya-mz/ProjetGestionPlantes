@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetGestionPlantes.PageCamera"
+             xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms;assembly=Zxing.Net.Mobile.Forms">
+    
+    <ContentPage.Content>
+        <Grid ColumnSpacing="0" RowSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <zxing:ZXingScannerView Grid.Row="0"
+                x:Name="scanner"
+                OnScanResult="ScanView_OnScanResult"
+                IsScanning="True"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand">
+            </zxing:ZXingScannerView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

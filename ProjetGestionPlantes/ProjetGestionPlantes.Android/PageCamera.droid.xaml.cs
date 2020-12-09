@@ -6,17 +6,16 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using ProjetGestionPlantes;
 
 namespace ProjetGestionPlantes
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PageQRcode : ContentPage
+    public partial class PageCamera : ContentPage
     {
-        static string valueQRCode = "Bonjour";
-        public PageQRcode()
+        public void VirtualReality()
         {
-            InitializeComponent();
-            //frmQrCode.BarcodeValue = valueQRCode;
+            string id =
         }
     }
 }
