@@ -28,12 +28,21 @@ namespace ProjetGestionPlantes
         private void AjouterPlante_Onclick(object sender, EventArgs e)
         {
 <<<<<<< Letitia
+<<<<<<< Letitia
             ((App)App.Current).ChangeScreen(new PageAjouterPlante());
 <<<<<<< Letitia
 =======
+=======
+<<<<<<< Michi
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
         //async void AjouterPlante_Onclick(object sender, EventArgs e)
 >>>>>>> Update pageAjouterPlante button / Picker
         }
+=======
+            ((App)App.Current).ChangeScreen(new PageAjouterPlante());
+        }   
+
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
 
 
         private void CallCamera(object sender, EventArgs e)
@@ -51,6 +60,10 @@ namespace ProjetGestionPlantes
             //Récupérer les infos de la plante à partir de son id
             //calculer l'état de la plante avec la fonction DonnerEtatPlante
 <<<<<<< Letitia
+<<<<<<< Letitia
+=======
+<<<<<<< Michi
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
             //afficher les emojis en fonction de l'état d'arrosage de la plante
 <<<<<<< Letitia
 =======
@@ -65,7 +78,16 @@ namespace ProjetGestionPlantes
 =======
 >>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
 
+<<<<<<< Letitia
 >>>>>>> Update pageAjouterPlante button / Picker
+=======
+=======
+            //afficher les emojis en fonction de l'état d'arrobsage de la plante
+
+            //await Navigation.PushAsync(new PageAjouterPlante());
+        }
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
 
        
         //ok
@@ -181,10 +203,16 @@ namespace ProjetGestionPlantes
         }
 <<<<<<< Letitia
 <<<<<<< Letitia
+<<<<<<< Letitia
 =======
 
         
 >>>>>>> Update pageAjouterPlante button / Picker
+=======
+<<<<<<< Michi
+
+        
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
 =======
 >>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
     }

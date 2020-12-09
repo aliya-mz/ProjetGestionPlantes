@@ -24,6 +24,10 @@ namespace ProjetGestionPlantes
             //vider les champs
             entryNom.Text = entryNotes.Text = string.Empty;
 <<<<<<< Letitia
+<<<<<<< Letitia
+=======
+<<<<<<< Michi
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
 =======
             //remplir la liste déroulante
             FillListEspeces();
@@ -58,6 +62,10 @@ namespace ProjetGestionPlantes
                     Notes = entryNotes.Text,
                     dernierArrosage = DateTime.Now,
 <<<<<<< Letitia
+<<<<<<< Letitia
+=======
+<<<<<<< Michi
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
                    // IdEspece = int.Parse(entryEspece.Text),
 =======
                     //récupère l'identifiant de l'espèce sélectionnée
