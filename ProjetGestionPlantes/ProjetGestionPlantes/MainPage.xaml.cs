@@ -22,14 +22,19 @@ namespace ProjetGestionPlantes
 
             base.OnAppearing();
             AfficherPlantes();
-            Console.WriteLine("OnAppearing : ok");
         }
 
         //ok
         private void AjouterPlante_Onclick(object sender, EventArgs e)
         {
+<<<<<<< Michi
         //async void AjouterPlante_Onclick(object sender, EventArgs e)
         }
+=======
+            ((App)App.Current).ChangeScreen(new PageAjouterPlante());
+        }   
+
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
 
         async void CallCamera(object sender, EventArgs e)
         {
@@ -39,9 +44,16 @@ namespace ProjetGestionPlantes
             //scanner le code qr et récupérer l'id de la plante qui est le texte utilisé pour le générer
             //Récupérer les infos de la plante à partir de son id
             //calculer l'état de la plante avec la fonction DonnerEtatPlante
+<<<<<<< Michi
             //afficher les emojis en fonction de l'état d'arrosage de la plante
         }        
 
+=======
+            //afficher les emojis en fonction de l'état d'arrobsage de la plante
+
+            //await Navigation.PushAsync(new PageAjouterPlante());
+        }
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
 
         //ok
         async void AfficherPlantes()
@@ -154,7 +166,10 @@ namespace ProjetGestionPlantes
             }
             return etat;
         }
+<<<<<<< Michi
 
         
+=======
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
     }
 }
