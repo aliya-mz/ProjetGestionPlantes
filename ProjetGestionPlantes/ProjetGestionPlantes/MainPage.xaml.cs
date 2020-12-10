@@ -27,6 +27,7 @@ namespace ProjetGestionPlantes
         //ok
         private void AjouterPlante_Onclick(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 <<<<<<< Letitia
 <<<<<<< Letitia
             ((App)App.Current).ChangeScreen(new PageAjouterPlante());
@@ -37,10 +38,16 @@ namespace ProjetGestionPlantes
 >>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
         //async void AjouterPlante_Onclick(object sender, EventArgs e)
 >>>>>>> Update pageAjouterPlante button / Picker
+=======
+<<<<<<< HEAD
+<<<<<<< Michi
+        //async void AjouterPlante_Onclick(object sender, EventArgs e)
+>>>>>>> master
         }
 =======
             ((App)App.Current).ChangeScreen(new PageAjouterPlante());
         }   
+<<<<<<< HEAD
 
 >>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
 
@@ -49,6 +56,15 @@ namespace ProjetGestionPlantes
 =======
         }   
 
+=======
+
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
+=======
+            ((App)App.Current).ChangeScreen(new PageAjouterPlante());
+        }   
+
+>>>>>>> master
+>>>>>>> master
 
         async void CallCamera(object sender, EventArgs e)
 >>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
@@ -59,6 +75,7 @@ namespace ProjetGestionPlantes
             //scanner le code qr et récupérer l'id de la plante qui est le texte utilisé pour le générer
             //Récupérer les infos de la plante à partir de son id
             //calculer l'état de la plante avec la fonction DonnerEtatPlante
+<<<<<<< HEAD
 <<<<<<< Letitia
 <<<<<<< Letitia
 =======
@@ -69,14 +86,32 @@ namespace ProjetGestionPlantes
 =======
             //afficher les emojis en fonction de l'état d'arrobsage de la plante
 >>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
+=======
+<<<<<<< HEAD
+<<<<<<< Michi
+            //afficher les emojis en fonction de l'état d'arrosage de la plante
+        }        
+
+=======
+=======
+>>>>>>> master
+            //afficher les emojis en fonction de l'état d'arrobsage de la plante
+>>>>>>> master
 
             ((App)App.Current).ChangeScreen(new PageCamera());
         }
+<<<<<<< HEAD
 <<<<<<< Letitia
 =======
         }        
 =======
 >>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
+=======
+<<<<<<< HEAD
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
+=======
+>>>>>>> master
+>>>>>>> master
 
 <<<<<<< Letitia
 >>>>>>> Update pageAjouterPlante button / Picker
@@ -201,6 +236,7 @@ namespace ProjetGestionPlantes
             }
             return etat;
         }
+<<<<<<< HEAD
 <<<<<<< Letitia
 <<<<<<< Letitia
 <<<<<<< Letitia
@@ -215,5 +251,15 @@ namespace ProjetGestionPlantes
 >>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
 =======
 >>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
+=======
+<<<<<<< HEAD
+<<<<<<< Michi
+
+        
+=======
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
+=======
+>>>>>>> master
+>>>>>>> master
     }
 }

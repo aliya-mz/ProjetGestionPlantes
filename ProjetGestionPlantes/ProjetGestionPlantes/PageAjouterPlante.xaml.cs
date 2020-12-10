@@ -23,12 +23,20 @@ namespace ProjetGestionPlantes
 
             //vider les champs
             entryNom.Text = entryNotes.Text = string.Empty;
+<<<<<<< HEAD
 <<<<<<< Letitia
 <<<<<<< Letitia
 =======
 <<<<<<< Michi
 >>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
 =======
+=======
+<<<<<<< HEAD
+<<<<<<< Michi
+=======
+=======
+>>>>>>> master
+>>>>>>> master
             //remplir la liste déroulante
             FillListEspeces();
         }
@@ -47,7 +55,14 @@ namespace ProjetGestionPlantes
                 ////pré-sélectionner le premier élément
                 //pickerEspece.SelectedIndex = 1;
             }
+<<<<<<< HEAD
 >>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
+=======
+<<<<<<< HEAD
+>>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
+=======
+>>>>>>> master
+>>>>>>> master
         }
 
         async void OnClickCreate(object sender, EventArgs e)
@@ -61,16 +76,28 @@ namespace ProjetGestionPlantes
                     Nom = entryNom.Text,
                     Notes = entryNotes.Text,
                     dernierArrosage = DateTime.Now,
+<<<<<<< HEAD
 <<<<<<< Letitia
 <<<<<<< Letitia
 =======
 <<<<<<< Michi
 >>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
+=======
+<<<<<<< HEAD
+<<<<<<< Michi
+>>>>>>> master
                    // IdEspece = int.Parse(entryEspece.Text),
 =======
                     //récupère l'identifiant de l'espèce sélectionnée
                     //IdEspece = int.Parse((pickerEspece.Items[pickerEspece.SelectedIndex].Split('-'))[0]),
 >>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
+<<<<<<< HEAD
+=======
+=======
+                    //récupère l'identifiant de l'espèce sélectionnée
+                    //IdEspece = int.Parse((pickerEspece.Items[pickerEspece.SelectedIndex].Split('-'))[0]),
+>>>>>>> master
+>>>>>>> master
                 });
 
                 // retourner sur la page d'accueil
