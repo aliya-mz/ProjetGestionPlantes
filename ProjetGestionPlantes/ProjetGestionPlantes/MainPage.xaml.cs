@@ -27,6 +27,7 @@ namespace ProjetGestionPlantes
         //ok
         private void AjouterPlante_Onclick(object sender, EventArgs e)
         {
+<<<<<<< HEAD
 <<<<<<< Michi
         //async void AjouterPlante_Onclick(object sender, EventArgs e)
         }
@@ -35,6 +36,11 @@ namespace ProjetGestionPlantes
         }   
 
 >>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
+=======
+            ((App)App.Current).ChangeScreen(new PageAjouterPlante());
+        }   
+
+>>>>>>> master
 
         async void CallCamera(object sender, EventArgs e)
         {
@@ -44,16 +50,22 @@ namespace ProjetGestionPlantes
             //scanner le code qr et récupérer l'id de la plante qui est le texte utilisé pour le générer
             //Récupérer les infos de la plante à partir de son id
             //calculer l'état de la plante avec la fonction DonnerEtatPlante
+<<<<<<< HEAD
 <<<<<<< Michi
             //afficher les emojis en fonction de l'état d'arrosage de la plante
         }        
 
 =======
+=======
+>>>>>>> master
             //afficher les emojis en fonction de l'état d'arrobsage de la plante
 
             //await Navigation.PushAsync(new PageAjouterPlante());
         }
+<<<<<<< HEAD
 >>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
+=======
+>>>>>>> master
 
         //ok
         async void AfficherPlantes()
@@ -166,10 +178,13 @@ namespace ProjetGestionPlantes
             }
             return etat;
         }
+<<<<<<< HEAD
 <<<<<<< Michi
 
         
 =======
 >>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
+=======
+>>>>>>> master
     }
 }

@@ -23,8 +23,11 @@ namespace ProjetGestionPlantes
 
             //vider les champs
             entryNom.Text = entryNotes.Text = string.Empty;
+<<<<<<< HEAD
 <<<<<<< Michi
 =======
+=======
+>>>>>>> master
             //remplir la liste déroulante
             FillListEspeces();
         }
@@ -43,7 +46,10 @@ namespace ProjetGestionPlantes
                 ////pré-sélectionner le premier élément
                 //pickerEspece.SelectedIndex = 1;
             }
+<<<<<<< HEAD
 >>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
+=======
+>>>>>>> master
         }
 
         async void OnClickCreate(object sender, EventArgs e)
@@ -57,12 +63,17 @@ namespace ProjetGestionPlantes
                     Nom = entryNom.Text,
                     Notes = entryNotes.Text,
                     dernierArrosage = DateTime.Now,
+<<<<<<< HEAD
 <<<<<<< Michi
                    // IdEspece = int.Parse(entryEspece.Text),
 =======
                     //récupère l'identifiant de l'espèce sélectionnée
                     //IdEspece = int.Parse((pickerEspece.Items[pickerEspece.SelectedIndex].Split('-'))[0]),
 >>>>>>> Update fonctionnalités choisir espèce + affichage infos plante
+=======
+                    //récupère l'identifiant de l'espèce sélectionnée
+                    //IdEspece = int.Parse((pickerEspece.Items[pickerEspece.SelectedIndex].Split('-'))[0]),
+>>>>>>> master
                 });
 
                 // retourner sur la page d'accueil
