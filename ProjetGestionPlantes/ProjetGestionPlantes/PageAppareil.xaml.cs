@@ -7,8 +7,6 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using ZXing;
 
-[assembly: Dependency(typeof(ProjetGestionPlantes.Droid.MainActivity))]
-
 namespace ProjetGestionPlantes
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
