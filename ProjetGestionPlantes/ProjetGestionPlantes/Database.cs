@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using SQLite;
 using System.Linq;
+using System.Collections.ObjectModel;
 
 namespace ProjetGestionPlantes
 {    
@@ -27,19 +28,17 @@ namespace ProjetGestionPlantes
             return _database.InsertAsync(plante);
         }
 
-        //public Task<Plante> GetPlanteByIdAsync(int id)
-        //{
-        //    return _database.Table<Plante>().FirstOrDefault(plante => plante.ID_PLANTE == id);
-        //}
-
-        //public Plante GetCustomer(int id)
-        //{
-        //    lock (collisionLock)
-        //    {
-        //        return _database.Table<Plante>().
-        //          FirstOrDefault(customer => customer.Id == id);
-        //    }
-        //}
+        public Task<int> UpdatePlanteInfos(Plante plante)
+        {
+            if (plante.ID_PLANTE != 0)
+            {
+                return _database.UpdateAsync(plante);
+            }
+            else
+            {
+                return _database.InsertAsync(plante);
+            }
+        }
 
         //gestion de la table Espece
         public Task<List<Espece>> GetEspeceAsync()

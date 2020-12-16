@@ -72,7 +72,7 @@
                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="#C4C4C4"
                    Clicked="OnClickArroser"
-                   HeightRequest="15"
+                   HeightRequest="50"
                    WidthRequest="10"
                    Padding="10"
                    Margin="5"

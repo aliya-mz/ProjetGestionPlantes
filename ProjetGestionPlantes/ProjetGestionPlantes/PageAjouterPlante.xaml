@@ -70,7 +70,9 @@
                    Margin="25"
                    Text="Ajouter une nouvelle espèce"
                    HeightRequest="50"
-                   WidthRequest="50" />
+                   WidthRequest="50"
+                   Clicked="OnClickAddEspece"
+                   />
                 
                 <!-- entryNotes -->
                 <Entry x:Name="entryNotes"

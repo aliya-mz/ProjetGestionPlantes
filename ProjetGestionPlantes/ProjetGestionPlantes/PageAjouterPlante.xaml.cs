@@ -13,7 +13,7 @@ namespace ProjetGestionPlantes
     public partial class PageAjouterPlante : ContentPage
     {
         public PageAjouterPlante()
-        {
+        {            
             InitializeComponent();
         }        
 
@@ -36,11 +36,16 @@ namespace ProjetGestionPlantes
             //remplir la liste déroulante
             foreach (Espece espece in especes)
             {
-                //pickerEspece.Items.Add(espece.ID_ESPECE + "-" + espece.NomEspece);
+                pickerEspece.Items.Add(espece.ID_ESPECE + "-" + espece.NomEspece);
 
-                ////pré-sélectionner le premier élément
-                //pickerEspece.SelectedIndex = 1;
+                //pré-sélectionner le premier élément
+                pickerEspece.SelectedIndex = 1;
             }
+        }
+
+        private void OnClickAddEspece(object sender, EventArgs e)
+        {
+            ((App)App.Current).ChangeScreen(new PageAjouterEspece());
         }
 
         async void OnClickCreate(object sender, EventArgs e)
