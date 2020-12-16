@@ -60,6 +60,18 @@ namespace ProjetGestionPlantes
                 // couleur random pour l'étiquette de la plante                
                 int random = rnd.Next(0, (rgbCouleurs.Length / 3) - 1);
 
+                //récupérer l'espèce de la plante (nom de l'espèce en fonction de son id)
+                List<Espece> especes = new List<Espece>();
+                especes.AddRange(await App.Database.GetEspeceAsync());
+                string nomEspece = "";
+                foreach (Espece espece in especes)
+                {
+                    if (espece.ID_ESPECE == plante.IdEspece)
+                    {
+                        nomEspece = espece.NomEspece.ToString();
+                    }
+                }
+
                 //créer le bouton (à mettre dans le stacklayout) - enregistrer l'id de la plante dans le Text
                 Button btnPlante = new Button();
                 btnPlante.Clicked += VoirPlante;
@@ -72,7 +84,7 @@ namespace ProjetGestionPlantes
                 nomPlante.Text = plante.Nom;
 
                 Label especePlante = new Label();
-                especePlante.Text = plante.IdEspece.ToString(); //remplacer id espece par nomEspece de la table Espece avec une jointure
+                especePlante.Text = nomEspece; //remplacer id espece par nomEspece de la table Espece avec une jointure
 
                 StackLayout textPlante = new StackLayout();
                 textPlante.Children.Add(nomPlante);
@@ -94,6 +106,7 @@ namespace ProjetGestionPlantes
                 lytContent.Children.Add(vuePlante);
             }
         }
+
 
         //ok
         async void VoirPlante(object sender, EventArgs e)
