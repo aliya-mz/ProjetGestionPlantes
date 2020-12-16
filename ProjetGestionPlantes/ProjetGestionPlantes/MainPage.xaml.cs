@@ -28,21 +28,10 @@ namespace ProjetGestionPlantes
         private void AjouterPlante_Onclick(object sender, EventArgs e)
         {
             ((App)App.Current).ChangeScreen(new PageAjouterPlante());
-        }   
-
-        private void CallCamera(object sender, EventArgs e) { 
-
-            //aller sur la camera - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-            //Depuis la caméra :
-            //scanner le code qr et récupérer l'id de la plante qui est le texte utilisé pour le générer
-            //Récupérer les infos de la plante à partir de son id
-            //calculer l'état de la plante avec la fonction DonnerEtatPlante
-            //afficher les emojis en fonction de l'état d'arrosage de la plante
-            //afficher les emojis en fonction de l'état d'arrobsage de la plante
-            ((App)App.Current).ChangeScreen(new PageCamera());
         }
-
+        private void CallCamera(object sender, EventArgs e) {           
+            ((App)App.Current).ChangeScreen(new PageAppareil());
+        }
         //ok
         async void AfficherPlantes()
         {

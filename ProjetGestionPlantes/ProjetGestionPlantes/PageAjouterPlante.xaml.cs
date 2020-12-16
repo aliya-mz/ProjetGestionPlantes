@@ -61,7 +61,6 @@ namespace ProjetGestionPlantes
                     dernierArrosage = DateTime.Now,
                     //récupère l'identifiant de l'espèce sélectionnée
                     IdEspece = int.Parse((pickerEspece.Items[pickerEspece.SelectedIndex].Split('-'))[0]),
-
                 });
 
                 // retourner sur la page d'accueil

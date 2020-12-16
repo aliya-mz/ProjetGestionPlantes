@@ -5,24 +5,33 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using ZXing;
+
+[assembly: Dependency(typeof(ProjetGestionPlantes.Droid.MainActivity))]
 
 namespace ProjetGestionPlantes
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class PageCamera : ContentPage
+    public partial class PageAppareil : ContentPage
     {
         static string idPlante;
-        public PageCamera()
+
+        public PageAppareil()
         {
             InitializeComponent();
         }
 
-        public  string ScanView_OnScanResult()
+        public void ScanQRCode(Result result)
         {
-            if(this.scanner.Result.Text != null)
+            if (result.Text != null)
             {
-                idPlante = this.scanner.Result.Text;
+                Assigner(result.Text);
             }
+        }
+
+        public string Assigner(string a)
+        {
+            idPlante = a;
             return idPlante;
         }
     }
