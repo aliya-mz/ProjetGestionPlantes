@@ -26,12 +26,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="PageCamera.vitrual.cs">
-      <DependentUpon>%(Filename)</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Update="PageAjouterEspece.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

@@ -12,22 +12,23 @@ namespace ProjetGestionPlantes
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PageVoirPlante : ContentPage
     {
-        static int idPlante;
         static Plante plante;
 
-        public PageVoirPlante(int id_Plante)
+        public PageVoirPlante(Plante planteSelectionnee)
         {
             InitializeComponent();
-            idPlante = id_Plante;
+            plante = planteSelectionnee;
+
+            Console.WriteLine(plante.ID_PLANTE);
 
             //Récupère l'id de la plante et le définit comme la valeur du QR Code
-            zxingQrCode.BarcodeValue = Convert.ToString(idPlante);
+            zxingQrCode.BarcodeValue = Convert.ToString(plante.ID_PLANTE);
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            AfficherInfosPlante(idPlante);
+            AfficherInfosPlante(plante);
         }
 
         private void OnClickReturn(object sender, EventArgs e)
@@ -36,42 +37,29 @@ namespace ProjetGestionPlantes
             ((App)App.Current).ChangeScreen(new MainPage());
         }
 
-        private void OnClickSaveInfo(object sender, EventArgs args)
+        async void OnClickSaveInfo(object sender, EventArgs args)
         {
-            //mettre à jour l'enregistrement (les notes)            
             plante.Notes = entryNote.Text;
+            //mise à jour des notes la plante dans la BD
+            await App.Database.UpdatePlanteInfos(plante);
         }
 
-        private void OnClickArroser(object sender, EventArgs args)
+        async void OnClickArroser(object sender, EventArgs args)
         {
-            //mettre à jour l'enregistrement (les notes)
             plante.dernierArrosage = DateTime.Now;
+
+            //mise à jour du dernier arrosage de la plante dans la BD
+            await App.Database.UpdatePlanteInfos(plante);
         }
 
-        async void AfficherInfosPlante(int id)
+        async void AfficherInfosPlante(Plante Plante)
         {
-            //récupérer la plante
-            //enregistrer les plantes de la BD dans une liste
-            List<Plante> plantes = new List<Plante>();
-            plantes.AddRange(await App.Database.GetPlanteAsync());
-
-            plante = new Plante();
-            //parcourir les plantes de la liste et les afficher
-            foreach (Plante planteA in plantes)
-            {
-                if (plante.ID_PLANTE == id)
-                {
-                    plante = planteA;
-                }
-            }
-
-            //récupérer l'espèce
-            //retourner le nom de l'espèce en fonction de son id
+            //récupérer l'espèce de la plante (nom de l'espèce en fonction de son id)
             List<Espece> especes = new List<Espece>();
             especes.AddRange(await App.Database.GetEspeceAsync());
 
             string nomEspece = "";
-            //parcourir les plantes de la liste et les afficher
+            //trouver dans la liste l'espèce dont l'id correspond
             foreach (Espece espece in especes)
             {
                 if (espece.ID_ESPECE == plante.IdEspece)
@@ -81,7 +69,7 @@ namespace ProjetGestionPlantes
             }
 
             //afficher les informations
-            lblNomEspece.Text = plante.ID_PLANTE.ToString() + ", " + nomEspece;
+            lblNomEspece.Text = plante.Nom.ToString() + ", " + nomEspece;
             entryInfo.Text = plante.dernierArrosage.ToString();
             entryNote.Text = plante.Notes.ToString();
         }

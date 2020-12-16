@@ -16,18 +16,20 @@ namespace ProjetGestionPlantes
         {
             InitializeComponent();
         }
-        protected override void OnDisappearing()
+        protected override void OnAppearing()
         {
-            base.OnDisappearing();
+            base.OnAppearing();
             //vider les champs
-            entryEspece.Text = entryJours.Text = entryEspece.Text = string.Empty;
+            entryEspece.Text = string.Empty;
+            entryJours.Text = "1";
         }
 
         async void OnClickAddEspece(object sender, EventArgs args)
         {
+            //si tous les champs sont entrés
             if (!string.IsNullOrWhiteSpace(entryEspece.Text) && !string.IsNullOrWhiteSpace(entryJours.Text) && !string.IsNullOrWhiteSpace(entryEspece.Text))
             {
-                //Ajout d'une plante avec les propriétés entrées dans le formulaire
+                //Ajout d'une espèce avec les propriétés entrées dans le formulaire
                 await App.Database.SaveEspeceAsync(new Espece
                 {
                     NomEspece = entryEspece.Text,

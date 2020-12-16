@@ -13,10 +13,9 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-
+            <!--OnScanResult="ScanView_OnScanResult"-->
             <zxing:ZXingScannerView Grid.Row="0"
-                x:Name="scanner"
-                OnScanResult="ScanView_OnScanResult"
+                x:Name="scanner"                
                 IsScanning="True"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="CenterAndExpand">

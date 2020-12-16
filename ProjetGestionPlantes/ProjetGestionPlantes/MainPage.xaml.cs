@@ -106,22 +106,18 @@ namespace ProjetGestionPlantes
             Button buttonPlante = (Button)sender;
             int idPlante = Convert.ToInt32(buttonPlante.Text);
 
+            //trouver la plante correspondant à l'identifiant
             Plante planteSelected = new Plante();
-
             foreach (Plante plante in plantes)
             {
-                //si l'id correspond
                 if (plante.ID_PLANTE == idPlante)
                 {
-                    //enregistrer cette plante
                     planteSelected = plante;
                 }
             }
 
-            //récupérer le text du bouton cliqué
-            //aller sur la page de détails de cette plante en envoyant en paramètres son id
-            //await Navigation.PushAsync(new PageVoirPlante(1));
-            ((App)App.Current).ChangeScreen(new PageVoirPlante(1));
+            //aller sur la page de détails de cette plante en envoyant en paramètre la plante
+            ((App)App.Current).ChangeScreen(new PageVoirPlante(planteSelected));
         }
 
         //renvoie l'état (à executer dans la page caméra)
