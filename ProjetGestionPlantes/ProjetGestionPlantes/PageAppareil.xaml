@@ -19,7 +19,8 @@
                 OnScanResult="ScanQRCode"
                 IsScanning="True"
                 VerticalOptions="CenterAndExpand"
-                HorizontalOptions="CenterAndExpand">
+                HorizontalOptions="CenterAndExpand"                               
+                >
             </zxing:ZXingScannerView>
         </Grid>
     </ContentPage.Content>

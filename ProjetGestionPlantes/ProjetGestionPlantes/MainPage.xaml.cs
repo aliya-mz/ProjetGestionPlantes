@@ -122,35 +122,6 @@ namespace ProjetGestionPlantes
             ((App)App.Current).ChangeScreen(new PageVoirPlante(planteSelected));
         }
 
-        //renvoie l'état (à executer dans la page caméra)
-        private int DonnerEtatPlante(Plante plante, Espece espece)
-        {
-            //Calcul de l'état de la plante - - - - - - - - - - - - - - - - - - - - - - 
-
-            //récupérer la plante à partir de l'id
-            //récupérer l'espèce à partir de la plante
-            //Espece espece = App.Database.GetEspeceByIdAsync(plante.IdEspece);
-
-
-            //0 = heureux, 1 = moyen, 2 = triste
-            int etat;
-            //si on n'a pas encore atteint le moment où la plante doit être arrosée
-            if ((plante.dernierArrosage - DateTime.Now).TotalDays <= espece.FrequArrosage)
-            {
-                //la plante est heureuse
-                etat = 0;
-            }
-            //si la plante doit être arrosée aujourd'hui
-            else if ((plante.dernierArrosage - DateTime.Now).TotalDays == espece.FrequArrosage)
-            {
-                etat = 1;
-            }
-            //si on a oublié un arrosage
-            else
-            {
-                etat = 2;
-            }
-            return etat;
-        }
+        
     }
 }
