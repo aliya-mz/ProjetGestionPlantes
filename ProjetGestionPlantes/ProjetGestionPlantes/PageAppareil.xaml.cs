@@ -66,7 +66,7 @@ namespace ProjetGestionPlantes
             //0 = heureux, 1 = moyen, 2 = triste
             int etat;
             //si on n'a pas encore atteint le moment où la plante doit être arrosée
-            if ((planteSelected.dernierArrosage - DateTime.Now).TotalDays <= monEspece.FrequArrosage)
+            if ((planteSelected.dernierArrosage - DateTime.Now).TotalDays < monEspece.FrequArrosage)
             {
                 //la plante est heureuse
                 etat = 0;
@@ -86,13 +86,13 @@ namespace ProjetGestionPlantes
             switch (etat)
             {
                 case 0:
-                    DisplayAlert("Résultat du scan", "Cette plante est : ", "OK");
+                    await DisplayAlert("Etat de la plante", planteSelected.Nom + " est heureuse. Vous l'avez bien arrosée.", "OK");
                     break;
                 case 1:
-                    DisplayAlert("Résultat du scan", "Cette plante est : ", "OK");
+                    await DisplayAlert("Etat de la plante", planteSelected.Nom + " s'impatiente. Elle doit être arrosée aujourd'hui.", "OK");
                     break;
                 case 2:
-                    DisplayAlert("Résultat du scan", "Cette plante est : ", "OK");
+                    await DisplayAlert("Etat de la plante", planteSelected.Nom + " est triste. Vous avez oublié de l'arroser.", "OK");
                     break;
             }
         }
